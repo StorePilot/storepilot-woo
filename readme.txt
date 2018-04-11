@@ -9,11 +9,11 @@ URI: https://storepilot.com/license/
 WC requires at least: 3.2.6
 WC tested up to: 3.3.3
 
-StorePilot extends your woocommerce experience with professional management tools.
+StorePilot extends your woocommerce experience with professional desktop management tools.
 
 == Description ==
 
-StorePilot is a management tool specialized to suit your selling and warehouse needs.
+StorePilot is a management tool specialized to suit your selling and warehouse needs right into your desktop.
 
 Major features in StorePilot include:
 
@@ -30,7 +30,8 @@ Visit [our website](https://storepilot.com/) for documentation.
 
 == Installation ==
 
-Upload the StorePilot plugin to your WooCommerce site, Activate it and add your license in the plugin license page.
+Upload the StorePilot plugin to your WooCommerce site & Activate it.
+Then connect to your site from StorePilot Desktop Application.
 
 Good luck with your sales!
 

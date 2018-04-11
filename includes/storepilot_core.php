@@ -42,7 +42,7 @@ if (!class_exists('StorePilotCore')) :
      * StorePilot version -  Used for Licensing
      * @var string
      */
-    public $version = 'SP_VERSION_REPLACE';
+    public $version = '1.0.0';
 
     /**
      * Beta -  Used for Licensing
@@ -84,7 +84,7 @@ if (!class_exists('StorePilotCore')) :
     /**
      * StorePilot Constructor
      */
-    public function __construct($version = 'SP_VERSION_REPLACE')
+    public function __construct($version = '1.0.0')
     {
       $this->version = $version;
       do_action('before_storepilot_constructed');
