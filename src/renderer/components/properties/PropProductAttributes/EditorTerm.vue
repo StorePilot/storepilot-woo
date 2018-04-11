@@ -1,0 +1,56 @@
+<template>
+  <table>
+    <tr>
+      <td>{{$sp.print['Name']}}</td>
+      <td>
+        <el-input
+          :placeholder="$sp.print['Name']"
+          size="mini"
+          v-model="term.name.value"></el-input>
+      </td>
+    </tr>
+    <tr>
+      <td>{{$sp.print['Slug']}}</td>
+      <td>
+        <el-input
+          :placeholder="$sp.print['Slug']"
+          size="mini"
+          v-model="term.slug.value"></el-input>
+      </td>
+    </tr>
+    <tr>
+      <td>{{$sp.print['Description']}}</td>
+      <td>
+        <el-input
+          type="textarea"
+          :placeholder="$sp.print['Description']"
+          size="mini"
+          v-model="term.description.value"></el-input>
+      </td>
+    </tr>
+    <tr>
+      <td>{{$sp.print['MenuOrder']}}</td>
+      <td>
+        <el-input-number
+          :placeholder="$sp.print['MenuOrder']"
+          size="mini"
+          v-model="term.menu_order.value"></el-input-number>
+      </td>
+    </tr>
+    <tr>
+      <td>{{$sp.print['Count']}}</td>
+      <td>
+        {{term.count.value}}
+      </td>
+    </tr>
+  </table>
+</template>
+
+<script>
+  export default {
+    props: [
+      'term'
+    ],
+    name: 'EditorTerm'
+  }
+</script>

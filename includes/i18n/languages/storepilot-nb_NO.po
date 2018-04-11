@@ -1,0 +1,1323 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: StorePilot-1.0.0\n"
+"POT-Creation-Date: 2018-02-06 16:00+0100\n"
+"PO-Revision-Date: 2018-02-06 16:00+0100\n"
+"Last-Translator: storepilot <support@storepilot.com>\n"
+"Language-Team: support@storepilot.com\n"
+"Language: nb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.5\n"
+"X-Poedit-Basepath: ../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: i18n\n"
+"X-Poedit-SearchPath-1: storepilot_core.php\n"
+
+#: i18n/storepilot_core_i18n.php:29
+msgid "Activate"
+msgstr "Aktiver"
+
+#: i18n/storepilot_core_i18n.php:30
+msgid "Activate woocommerce"
+msgstr "Aktiver Woocommerce"
+
+#: i18n/storepilot_core_i18n.php:31
+msgid "Actions"
+msgstr "Handlinger"
+
+#: i18n/storepilot_core_i18n.php:32
+msgid "Advanced"
+msgstr "Avansert"
+
+#: i18n/storepilot_core_i18n.php:33
+msgid "Additional"
+msgstr "Ytterligere"
+
+#: i18n/storepilot_core_i18n.php:34
+msgid "Add product"
+msgstr "Nytt produkt"
+
+#: i18n/storepilot_core_i18n.php:35
+msgid "Add tag"
+msgstr "Ny tag"
+
+#: i18n/storepilot_core_i18n.php:36
+msgid "Add category"
+msgstr "Ny kategori"
+
+#: i18n/storepilot_core_i18n.php:37
+msgid "Attribute"
+msgstr "Attributt"
+
+#: i18n/storepilot_core_i18n.php:38
+msgid "Attributes"
+msgstr "Attributter"
+
+#: i18n/storepilot_core_i18n.php:39
+msgid "Attributes editor"
+msgstr "Rediger attributter"
+
+#: i18n/storepilot_core_i18n.php:40
+msgid "All"
+msgstr "Alle"
+
+#: i18n/storepilot_core_i18n.php:41
+msgid "Allow"
+msgstr "Tillat"
+
+#: i18n/storepilot_core_i18n.php:42
+msgid "Allow backorders"
+msgstr "Tillat restordre"
+
+#: i18n/storepilot_core_i18n.php:43
+msgid "Allow but notify customer"
+msgstr "Tillat, men varsle kunde"
+
+#: i18n/storepilot_core_i18n.php:44
+msgid "Align right"
+msgstr "Juster høyre"
+
+#: i18n/storepilot_core_i18n.php:45
+msgid "Align left"
+msgstr "Juster venstre"
+
+#: i18n/storepilot_core_i18n.php:46
+msgid "Align center"
+msgstr "Midtstill"
+
+#: i18n/storepilot_core_i18n.php:47
+msgid "Authorize"
+msgstr "Autoriser"
+
+#: i18n/storepilot_core_i18n.php:48
+msgid "Authorize StorePilot"
+msgstr "Autoriser StorePilot"
+
+#: i18n/storepilot_core_i18n.php:49
+msgid "Autosave"
+msgstr "Lagre automatisk"
+
+#: i18n/storepilot_core_i18n.php:50
+msgid "Archives"
+msgstr "Arkiv"
+
+#: i18n/storepilot_core_i18n.php:51
+msgid "Append"
+msgstr "Tilføy"
+
+#: i18n/storepilot_core_i18n.php:52
+msgid "Apply"
+msgstr "Angi"
+
+#: i18n/storepilot_core_i18n.php:53
+msgid "Barcode"
+msgstr "Strekkode"
+
+#: i18n/storepilot_core_i18n.php:54
+msgid "Bulk edit"
+msgstr "Masse redigering"
+
+#: i18n/storepilot_core_i18n.php:55
+msgid "Bullet list"
+msgstr "Punktliste"
+
+#: i18n/storepilot_core_i18n.php:56
+msgid "Bought!"
+msgstr "Kjøpt!"
+
+#: i18n/storepilot_core_i18n.php:57
+msgid "Both"
+msgstr "Begge"
+
+#: i18n/storepilot_core_i18n.php:58
+msgid "Bold"
+msgstr "Fet"
+
+#: i18n/storepilot_core_i18n.php:59
+msgid "By"
+msgstr "Av"
+
+#: i18n/storepilot_core_i18n.php:60
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: i18n/storepilot_core_i18n.php:61
+msgid "Catalog order by"
+msgstr "Katalog sorter etter"
+
+#: i18n/storepilot_core_i18n.php:62
+msgid "Category"
+msgstr "Kategori"
+
+#: i18n/storepilot_core_i18n.php:63
+msgid "Category archive display"
+msgstr "Kategori arkiv visning"
+
+#: i18n/storepilot_core_i18n.php:64
+msgid "Category title"
+msgstr "Kategori tittel"
+
+#: i18n/storepilot_core_i18n.php:65
+msgid "Category slug"
+msgstr "Kategori slug"
+
+#: i18n/storepilot_core_i18n.php:66
+msgid "Category settings"
+msgstr "Kategori innstillinger"
+
+#: i18n/storepilot_core_i18n.php:67
+msgid "Category image"
+msgstr "Kategori bilde"
+
+#: i18n/storepilot_core_i18n.php:68
+msgid "Categories"
+msgstr "Kategorier"
+
+#: i18n/storepilot_core_i18n.php:69
+msgid "Class"
+msgstr "Klasse"
+
+#: i18n/storepilot_core_i18n.php:70
+msgid "Clear"
+msgstr "Slett"
+
+#: i18n/storepilot_core_i18n.php:71
+msgid "Clear sale"
+msgstr "Slett salg"
+
+#: i18n/storepilot_core_i18n.php:72
+msgid "Close"
+msgstr "Lukk"
+
+#: i18n/storepilot_core_i18n.php:73
+msgid "Cross-Sells"
+msgstr "Kryssalg"
+
+#: i18n/storepilot_core_i18n.php:74
+msgid "Create"
+msgstr "Opprett"
+
+#: i18n/storepilot_core_i18n.php:75
+msgid "Custom sorting"
+msgstr "Manuell sortering"
+
+#: i18n/storepilot_core_i18n.php:76
+msgid "Count"
+msgstr "Antall"
+
+#: i18n/storepilot_core_i18n.php:77
+msgid "Copy link"
+msgstr "Kopier link"
+
+#: i18n/storepilot_core_i18n.php:78
+msgid "Date"
+msgstr "Dato"
+
+#: i18n/storepilot_core_i18n.php:79
+msgid "Decrease"
+msgstr "Reduser"
+
+#: i18n/storepilot_core_i18n.php:80
+msgid "Deactivate"
+msgstr "Deaktiver"
+
+#: i18n/storepilot_core_i18n.php:81
+msgid "Delete"
+msgstr "Slett"
+
+#: i18n/storepilot_core_i18n.php:82
+msgid "Delete product permanently"
+msgstr "Slett produkt permanent"
+
+#: i18n/storepilot_core_i18n.php:83
+msgid "Delete all permanently"
+msgstr "Slett alt permanent"
+
+#: i18n/storepilot_core_i18n.php:84
+msgid "Delete variation"
+msgstr "Slett variasjon"
+
+#: i18n/storepilot_core_i18n.php:85
+msgid "Delete permanently"
+msgstr "Slett permanent"
+
+#: i18n/storepilot_core_i18n.php:86
+msgid "Default"
+msgstr "Standard"
+
+#: i18n/storepilot_core_i18n.php:87
+msgid "Description"
+msgstr "Beskrivelse"
+
+#: i18n/storepilot_core_i18n.php:88
+msgid "Didn`t buy"
+msgstr "Har ikke kjøpt"
+
+#: i18n/storepilot_core_i18n.php:89
+msgid "Display"
+msgstr "Visning"
+
+#: i18n/storepilot_core_i18n.php:90
+msgid "Display type"
+msgstr "Visningstype"
+
+#: i18n/storepilot_core_i18n.php:91
+msgid "Do not allow"
+msgstr "Ikke tillat"
+
+#: i18n/storepilot_core_i18n.php:92
+msgid "Downloads"
+msgstr "Nedlastinger"
+
+#: i18n/storepilot_core_i18n.php:93
+msgid "Downloadable"
+msgstr "Nedlastbart"
+
+#: i18n/storepilot_core_i18n.php:94
+msgid "Downloadable files"
+msgstr "Nedlastbare filer"
+
+#: i18n/storepilot_core_i18n.php:95
+msgid "Download limit"
+msgstr "Nedlastingsgrense"
+
+#: i18n/storepilot_core_i18n.php:96
+msgid "Download expiry"
+msgstr "Utløpsdato"
+
+#: i18n/storepilot_core_i18n.php:97
+msgid "Draft"
+msgstr "Kladd"
+
+#: i18n/storepilot_core_i18n.php:98
+msgid "Drop attributes here"
+msgstr "Slipp attributt her"
+
+#: i18n/storepilot_core_i18n.php:99
+msgid "Drop product here"
+msgstr "Slipp produkt her"
+
+#: i18n/storepilot_core_i18n.php:100
+msgid "Duplicate"
+msgstr "Dupliser"
+
+#: i18n/storepilot_core_i18n.php:101
+msgid "Duplicate product"
+msgstr "Dupliser produkt"
+
+#: i18n/storepilot_core_i18n.php:102
+msgid "Duplicate tag"
+msgstr "Dupliser tag"
+
+#: i18n/storepilot_core_i18n.php:103
+msgid "Duplicate category"
+msgstr "Dupliser kategori"
+
+#: i18n/storepilot_core_i18n.php:104
+msgid "Edit"
+msgstr "Endre"
+
+#: i18n/storepilot_core_i18n.php:105
+msgid "Edit sale"
+msgstr "Endre salg"
+
+#: i18n/storepilot_core_i18n.php:106
+msgid "Enable"
+msgstr "Aktiver"
+
+#: i18n/storepilot_core_i18n.php:107
+msgid "Enable pretty permalinks"
+msgstr "Aktiver permalenker utenom standard"
+
+#: i18n/storepilot_core_i18n.php:108
+msgid "External product"
+msgstr "Eksternt produkt"
+
+#: i18n/storepilot_core_i18n.php:109
+msgid "Featured"
+msgstr "Fremhevet"
+
+#: i18n/storepilot_core_i18n.php:110
+msgid "Filter"
+msgstr "Filtrer"
+
+#: i18n/storepilot_core_i18n.php:111
+msgid "Filter categories"
+msgstr "Filtrer kategorier"
+
+#: i18n/storepilot_core_i18n.php:112
+msgid "Filter / Search"
+msgstr "Filtrer / Søk"
+
+#: i18n/storepilot_core_i18n.php:113
+msgid "Fixed"
+msgstr "Fast"
+
+#: i18n/storepilot_core_i18n.php:114
+msgid "From"
+msgstr "Fra"
+
+#: i18n/storepilot_core_i18n.php:115
+msgid "for"
+msgstr "for"
+
+#: i18n/storepilot_core_i18n.php:116
+msgid "Gallery"
+msgstr "Galleri"
+
+#: i18n/storepilot_core_i18n.php:117
+msgid "General"
+msgstr "Generelt"
+
+#: i18n/storepilot_core_i18n.php:118
+msgid "Grouped product"
+msgstr "Gruppert produkt"
+
+#: i18n/storepilot_core_i18n.php:119
+msgid "Global attributes"
+msgstr "Globale attributter"
+
+#: i18n/storepilot_core_i18n.php:120
+msgid "Global attribute id or 0"
+msgstr "Global attributt id eller 0"
+
+#: i18n/storepilot_core_i18n.php:121
+msgid "Height"
+msgstr "Høyde"
+
+#: i18n/storepilot_core_i18n.php:122
+msgid "Invalid or duplicated SKU"
+msgstr "Feil eller duplisert SKU"
+
+#: i18n/storepilot_core_i18n.php:123
+msgid "Id"
+msgstr "Id"
+
+#: i18n/storepilot_core_i18n.php:124
+msgid "Italic"
+msgstr "Kursiv"
+
+#: i18n/storepilot_core_i18n.php:125
+msgid "Items"
+msgstr "Gjenstander"
+
+#: i18n/storepilot_core_i18n.php:126
+msgid "Image"
+msgstr "Bilde"
+
+#: i18n/storepilot_core_i18n.php:127
+msgid "Insert image from gallery"
+msgstr "Sett inn bilde fra galleri"
+
+#: i18n/storepilot_core_i18n.php:128
+msgid "Insert video from gallery"
+msgstr "Sett inn video fra galleri"
+
+#: i18n/storepilot_core_i18n.php:129
+msgid "Insert link from gallery"
+msgstr "Sett inn link fra galleri"
+
+#: i18n/storepilot_core_i18n.php:130
+msgid "Insert line break"
+msgstr "Sett inn linjeskille"
+
+#: i18n/storepilot_core_i18n.php:131
+msgid "Increase"
+msgstr "Øk"
+
+#: i18n/storepilot_core_i18n.php:132
+msgid "Inventory"
+msgstr "Inventar"
+
+#: i18n/storepilot_core_i18n.php:133
+msgid "Install / Update"
+msgstr "Installer / Oppdater"
+
+#: i18n/storepilot_core_i18n.php:134
+msgid "Key"
+msgstr "Nøkkel"
+
+#: i18n/storepilot_core_i18n.php:135
+msgid "Label"
+msgstr "Lapp"
+
+#: i18n/storepilot_core_i18n.php:136
+msgid "Length"
+msgstr "Lengde"
+
+#: i18n/storepilot_core_i18n.php:137
+msgid "Link"
+msgstr "Kobling"
+
+#: i18n/storepilot_core_i18n.php:138
+msgid "License key"
+msgstr "Lisensnøkkel"
+
+#: i18n/storepilot_core_i18n.php:139 storepilot_core.php:641
+#: storepilot_core.php:642
+msgid "Manager"
+msgstr "Manager"
+
+#: i18n/storepilot_core_i18n.php:140
+msgid "Manage stock"
+msgstr "Administrer beholdning"
+
+#: i18n/storepilot_core_i18n.php:141
+msgid "Menu order"
+msgstr "Meny rekkefølge"
+
+#: i18n/storepilot_core_i18n.php:142
+msgid "Meta"
+msgstr "Meta"
+
+#: i18n/storepilot_core_i18n.php:143
+msgid "Meta data"
+msgstr "Metadata"
+
+#: i18n/storepilot_core_i18n.php:144
+msgid "Minimum one option required"
+msgstr "Minst ett alternativ påkrevet"
+
+#: i18n/storepilot_core_i18n.php:145
+msgid "Missing"
+msgstr "Mangler"
+
+#: i18n/storepilot_core_i18n.php:146
+msgid "Might be hidden for your customers"
+msgstr "Kan være skjult for dine kunder"
+
+#: i18n/storepilot_core_i18n.php:147
+msgid "Name"
+msgstr "Navn"
+
+#: i18n/storepilot_core_i18n.php:148
+msgid "New"
+msgstr "Ny"
+
+#: i18n/storepilot_core_i18n.php:149
+msgid "Number"
+msgstr "Nummer"
+
+#: i18n/storepilot_core_i18n.php:150
+msgid "No"
+msgstr "Nei"
+
+#: i18n/storepilot_core_i18n.php:151
+msgid "Notify"
+msgstr "Varsle"
+
+#: i18n/storepilot_core_i18n.php:152
+msgid "None"
+msgstr "Ingen"
+
+#: i18n/storepilot_core_i18n.php:153
+msgid "No data"
+msgstr "Ingen data"
+
+#: i18n/storepilot_core_i18n.php:154
+msgid "No reviews yet"
+msgstr "Ingen anmeldelser enda"
+
+#: i18n/storepilot_core_i18n.php:155
+msgid "Open"
+msgstr "Åpne"
+
+#: i18n/storepilot_core_i18n.php:156
+msgid "Option"
+msgstr "Alternativ"
+
+#: i18n/storepilot_core_i18n.php:157
+msgid "Options"
+msgstr "Alternativer"
+
+#: i18n/storepilot_core_i18n.php:158
+msgid "Order by"
+msgstr "Sorter etter"
+
+#: i18n/storepilot_core_i18n.php:159
+msgid "Ordered list"
+msgstr "Nummert liste"
+
+#: i18n/storepilot_core_i18n.php:160
+msgid "or higher required"
+msgstr "eller høyere påkrevet"
+
+#: i18n/storepilot_core_i18n.php:161
+msgid "Parent id is not 0"
+msgstr "Forelder id er ikke 0"
+
+#: i18n/storepilot_core_i18n.php:162
+msgid "Paragraph"
+msgstr "Paragraf"
+
+#: i18n/storepilot_core_i18n.php:163
+msgid "Pending"
+msgstr "Avventer"
+
+#: i18n/storepilot_core_i18n.php:164
+msgid "Per Page"
+msgstr "Per Side"
+
+#: i18n/storepilot_core_i18n.php:165
+msgid "Percentage"
+msgstr "Prosent"
+
+#: i18n/storepilot_core_i18n.php:166
+msgid "Per Row"
+msgstr "Per Rad"
+
+#: i18n/storepilot_core_i18n.php:167
+msgid "Permalink settings"
+msgstr "Permalenke innstillinger"
+
+#: i18n/storepilot_core_i18n.php:168
+msgid "Permalinks can not be 'plain'"
+msgstr "Permalenker kan ikke være ‘standard’"
+
+#: i18n/storepilot_core_i18n.php:169
+msgid "Please input"
+msgstr "Sett inn"
+
+#: i18n/storepilot_core_i18n.php:170
+msgid "Please follow these steps to see StorePilot in action"
+msgstr "Vennligst gjør følgende for å aktivere StorePilot"
+
+#: i18n/storepilot_core_i18n.php:171
+msgid "Prepend"
+msgstr "Legg til før"
+
+#: i18n/storepilot_core_i18n.php:172
+msgid "Price"
+msgstr "Pris"
+
+#: i18n/storepilot_core_i18n.php:173
+msgid "Price & sale"
+msgstr "Pris og salg"
+
+#: i18n/storepilot_core_i18n.php:174
+msgid "Private"
+msgstr "Privat"
+
+#: i18n/storepilot_core_i18n.php:175
+msgid "Preformatted"
+msgstr "Forhåndsformatert"
+
+#: i18n/storepilot_core_i18n.php:176
+msgid "Pretty permalinks not set"
+msgstr "Permalenker er ikke satt korrekt"
+
+#: i18n/storepilot_core_i18n.php:177
+msgid "Pretty permalinks set successfully"
+msgstr "Permalenker er satt korrekt"
+
+#: i18n/storepilot_core_i18n.php:178
+msgid "Pretty permalinks is enabled, please refresh your page"
+msgstr "Permalenker er satt korrekt, vennligst last inn siden på nytt"
+
+#: i18n/storepilot_core_i18n.php:179
+msgid "Product"
+msgstr "Produkt"
+
+#: i18n/storepilot_core_i18n.php:180
+msgid "Products"
+msgstr "Produkter"
+
+#: i18n/storepilot_core_i18n.php:181
+msgid "Product title"
+msgstr "Produkt tittel"
+
+#: i18n/storepilot_core_i18n.php:182
+msgid "Product slug"
+msgstr "Produkt slug"
+
+#: i18n/storepilot_core_i18n.php:183
+msgid "Position"
+msgstr "Posisjon"
+
+#: i18n/storepilot_core_i18n.php:184
+msgid "Published"
+msgstr "Publisert"
+
+#: i18n/storepilot_core_i18n.php:185
+msgid "Purchase note"
+msgstr "Kjøpsnotat"
+
+#: i18n/storepilot_core_i18n.php:186
+msgid "Quote"
+msgstr "Sitat"
+
+#: i18n/storepilot_core_i18n.php:187
+msgid "Rack"
+msgstr "Reol"
+
+#: i18n/storepilot_core_i18n.php:188
+msgid "Reset to 0"
+msgstr "Sett til 0"
+
+#: i18n/storepilot_core_i18n.php:189
+msgid "Refresh"
+msgstr "Refresh"
+
+#: i18n/storepilot_core_i18n.php:190
+msgid "Return to product manager"
+msgstr "Tilbake til produktsiden"
+
+#: i18n/storepilot_core_i18n.php:191
+msgid "Reviews"
+msgstr "Anmeldelser"
+
+#: i18n/storepilot_core_i18n.php:192
+msgid "Replace"
+msgstr "Erstatt"
+
+#: i18n/storepilot_core_i18n.php:193
+msgid "Regular price"
+msgstr "Standard pris"
+
+#: i18n/storepilot_core_i18n.php:194
+msgid "Remove"
+msgstr "Fjern"
+
+#: i18n/storepilot_core_i18n.php:195
+msgid "Remove from category"
+msgstr "Fjern fra kategori"
+
+#: i18n/storepilot_core_i18n.php:196
+msgid "Rename"
+msgstr "Endre navn"
+
+#: i18n/storepilot_core_i18n.php:197
+msgid "Sale!"
+msgstr "Salg!"
+
+#: i18n/storepilot_core_i18n.php:198
+msgid "Sale"
+msgstr "Salg"
+
+#: i18n/storepilot_core_i18n.php:199
+msgid "Sale active"
+msgstr "Salg aktivt"
+
+#: i18n/storepilot_core_i18n.php:200
+msgid "Sale flash"
+msgstr "Salgs flash"
+
+#: i18n/storepilot_core_i18n.php:201
+msgid "Sale inactive"
+msgstr "Salg inaktivt"
+
+#: i18n/storepilot_core_i18n.php:202
+msgid "Sale scheduled"
+msgstr "Salg planlagt"
+
+#: i18n/storepilot_core_i18n.php:203
+msgid "Sale price"
+msgstr "Salgspris"
+
+#: i18n/storepilot_core_i18n.php:204
+msgid "Save"
+msgstr "Lagre"
+
+#: i18n/storepilot_core_i18n.php:205
+msgid "Save global attribute before adding terms"
+msgstr "Lagre globalt attributt før begrep kan legges til"
+
+#: i18n/storepilot_core_i18n.php:206
+msgid "Schedule"
+msgstr "Planlegg"
+
+#: i18n/storepilot_core_i18n.php:207
+msgid "Search"
+msgstr "Søk"
+
+#: i18n/storepilot_core_i18n.php:208
+msgid "Select"
+msgstr "Velg"
+
+#: i18n/storepilot_core_i18n.php:209
+msgid "Selected"
+msgstr "Valgt"
+
+#: i18n/storepilot_core_i18n.php:210
+msgid "Select variation"
+msgstr "Velg variasjon"
+
+#: i18n/storepilot_core_i18n.php:211
+msgid "Select global attribute"
+msgstr "Velg globalt attributt"
+
+#: i18n/storepilot_core_i18n.php:212
+msgid "Select header"
+msgstr "Velg overskrift"
+
+#: i18n/storepilot_core_i18n.php:213
+msgid "Select file"
+msgstr "Velg fil"
+
+#: i18n/storepilot_core_i18n.php:214
+msgid "Select files"
+msgstr "Velg filer"
+
+#: i18n/storepilot_core_i18n.php:215
+msgid "Select image"
+msgstr "Velg bilde"
+
+#: i18n/storepilot_core_i18n.php:216
+msgid "Select images"
+msgstr "Velg bilder"
+
+#: i18n/storepilot_core_i18n.php:217
+msgid "Select video"
+msgstr "Velg video"
+
+#: i18n/storepilot_core_i18n.php:218
+msgid "Settings"
+msgstr "Innstillinger"
+
+#: i18n/storepilot_core_i18n.php:219
+msgid "Show"
+msgstr "Vis"
+
+#: i18n/storepilot_core_i18n.php:220
+msgid "Shop page display"
+msgstr "Butikkside visning"
+
+#: i18n/storepilot_core_i18n.php:221
+msgid "Set a permalink which is not plain and save"
+msgstr "Sett en permalenke utenom standard og lagre"
+
+#: i18n/storepilot_core_i18n.php:222
+msgid "Shop configuration"
+msgstr "Butikk konfigurasjon"
+
+#: i18n/storepilot_core_i18n.php:223
+msgid "Shop Settings"
+msgstr "Butikk Innstillinger"
+
+#: i18n/storepilot_core_i18n.php:224
+msgid "Shortcut"
+msgstr "Snarvei"
+
+#: i18n/storepilot_core_i18n.php:225
+msgid "Shortcut: delete"
+msgstr "Snarvei: delete"
+
+#: i18n/storepilot_core_i18n.php:226
+msgid "Short description"
+msgstr "Kort beskrivelse"
+
+#: i18n/storepilot_core_i18n.php:227
+msgid "Shipping"
+msgstr "Frakt"
+
+#: i18n/storepilot_core_i18n.php:228
+msgid "Simple product"
+msgstr "Simpelt produkt"
+
+#: i18n/storepilot_core_i18n.php:229
+msgid "SKU"
+msgstr "SKU"
+
+#: i18n/storepilot_core_i18n.php:230
+msgid "Slug"
+msgstr "Slug"
+
+#: i18n/storepilot_core_i18n.php:231
+msgid "Sold individually"
+msgstr "Selg individuelt"
+
+#: i18n/storepilot_core_i18n.php:232
+msgid "Status"
+msgstr "Status"
+
+#: i18n/storepilot_core_i18n.php:233
+msgid "Start composing..."
+msgstr "Begynn å skrive…"
+
+#: i18n/storepilot_core_i18n.php:234
+msgid "Stock keeping unit"
+msgstr "Lagerbeholdningsenhet"
+
+#: i18n/storepilot_core_i18n.php:235
+msgid "Stock quantity"
+msgstr "Lagerbeholdning"
+
+#: i18n/storepilot_core_i18n.php:236
+msgid "Strikethrough"
+msgstr "Gjennomstreket"
+
+#: i18n/storepilot_core_i18n.php:237
+msgid "Subcategories"
+msgstr "Underkategorier"
+
+#: i18n/storepilot_core_i18n.php:238
+msgid "Tag"
+msgstr "Tag"
+
+#: i18n/storepilot_core_i18n.php:239
+msgid "Tags"
+msgstr "Tags"
+
+#: i18n/storepilot_core_i18n.php:240
+msgid "Tag settings"
+msgstr "Tag innstillinger"
+
+#: i18n/storepilot_core_i18n.php:241
+msgid "Tag title"
+msgstr "Tag tittel"
+
+#: i18n/storepilot_core_i18n.php:242
+msgid "Tag slug"
+msgstr "Tag slug"
+
+#: i18n/storepilot_core_i18n.php:243
+msgid "Tax"
+msgstr "Skatt"
+
+#: i18n/storepilot_core_i18n.php:244
+msgid "Taxable"
+msgstr "Skattepliktig"
+
+#: i18n/storepilot_core_i18n.php:245
+msgid "Tax status"
+msgstr "Status skatt"
+
+#: i18n/storepilot_core_i18n.php:246
+msgid "Tax class"
+msgstr "Skatteklasse"
+
+#: i18n/storepilot_core_i18n.php:247
+msgid "Terms"
+msgstr "Vilkår"
+
+#: i18n/storepilot_core_i18n.php:248
+msgid "Text"
+msgstr "Tekst"
+
+#: i18n/storepilot_core_i18n.php:249
+msgid "Text color"
+msgstr "Tekst farge"
+
+#: i18n/storepilot_core_i18n.php:250
+msgid "This can not be undone!"
+msgstr "Dette kan ikke reverseres!"
+
+#: i18n/storepilot_core_i18n.php:251
+msgid "This page"
+msgstr "Denne siden"
+
+#: i18n/storepilot_core_i18n.php:252
+msgid "This product is trashed!"
+msgstr "Produktet er slettet!"
+
+#: i18n/storepilot_core_i18n.php:253
+msgid "Title"
+msgstr "Tittel"
+
+#: i18n/storepilot_core_i18n.php:254
+msgid "Title & slug"
+msgstr "Tittel og slug"
+
+#: i18n/storepilot_core_i18n.php:255
+msgid "To"
+msgstr "Til"
+
+#: i18n/storepilot_core_i18n.php:256
+msgid "Trash"
+msgstr "Søppel"
+
+#: i18n/storepilot_core_i18n.php:257
+msgid "Trash all"
+msgstr "Slett alt"
+
+#: i18n/storepilot_core_i18n.php:258
+msgid "Trashed"
+msgstr "Slettet"
+
+#: i18n/storepilot_core_i18n.php:259
+msgid "Type"
+msgstr "Type"
+
+#: i18n/storepilot_core_i18n.php:260
+msgid "Update"
+msgstr "Oppdater"
+
+#: i18n/storepilot_core_i18n.php:261
+msgid "Upsells"
+msgstr "Mersalg"
+
+#: i18n/storepilot_core_i18n.php:262
+msgid "Unselect all"
+msgstr "Fjern merking"
+
+#: i18n/storepilot_core_i18n.php:263
+msgid "Url"
+msgstr "Url"
+
+#: i18n/storepilot_core_i18n.php:264
+msgid "Underline"
+msgstr "Understrek"
+
+#: i18n/storepilot_core_i18n.php:265
+msgid "Use selected media"
+msgstr "Bruk valgt media"
+
+#: i18n/storepilot_core_i18n.php:266
+msgid "Value"
+msgstr "Verdi"
+
+#: i18n/storepilot_core_i18n.php:267
+msgid "Validate"
+msgstr "Valider"
+
+#: i18n/storepilot_core_i18n.php:268
+msgid "Variation"
+msgstr "Variasjon"
+
+#: i18n/storepilot_core_i18n.php:269
+msgid "Variations"
+msgstr "Variasjoner"
+
+#: i18n/storepilot_core_i18n.php:270
+msgid "Variable product"
+msgstr "Variabelt produkt"
+
+#: i18n/storepilot_core_i18n.php:271
+msgid "View"
+msgstr "Se"
+
+#: i18n/storepilot_core_i18n.php:272
+msgid "Visible"
+msgstr "Synlig"
+
+#: i18n/storepilot_core_i18n.php:273
+msgid "Virtual"
+msgstr "Virtuell"
+
+#: i18n/storepilot_core_i18n.php:274
+msgid "Weight"
+msgstr "Vekt"
+
+#: i18n/storepilot_core_i18n.php:275
+msgid "Width"
+msgstr "Bredde"
+
+#: i18n/storepilot_core_i18n.php:276
+msgid "Woocommerce settings"
+msgstr "Woocommerce innstillinger"
+
+#: i18n/storepilot_core_i18n.php:277
+msgid "Woocommerce activation succeeded"
+msgstr "Woocommerce er aktivert"
+
+#: i18n/storepilot_core_i18n.php:278
+msgid "Woocommerce activation succeeded, please refresh your page"
+msgstr "Woocommerce er aktivert, vennligst last inn siden på nytt"
+
+#: i18n/storepilot_core_i18n.php:279
+msgid "You are autorized"
+msgstr "Du er autorisert"
+
+#: i18n/storepilot_core_i18n.php:280
+msgid "Yes"
+msgstr "Ja"
+
+#: storepilot_core.php:527
+msgid "Header"
+msgstr "Topptekst"
+
+#: storepilot_core.php:529
+msgid "Category Header Content"
+msgstr "Kategori topptekst innhold"
+
+#: storepilot_core.php:532
+msgid "Footer"
+msgstr "Bunntekst"
+
+#: storepilot_core.php:534
+msgid "Category Footer Content"
+msgstr "Kategori bunntekst innhold"
+
+#: storepilot_core.php:617 storepilot_core.php:618
+msgid "Install"
+msgstr "Installer"
+
+#: storepilot_core.php:629 storepilot_core.php:630
+msgid "Setup"
+msgstr "Oppsett"
+
+#: storepilot_core.php:650 storepilot_core.php:651
+msgid "License"
+msgstr "Lisens"
+
+#: storepilot_core.php:658 storepilot_core.php:659
+msgid "Editor"
+msgstr "Editor"
+
+#: storepilot_core.php:923 storepilot_core.php:924
+msgid "Placeholder"
+msgstr "Plassholder"
+
+#~ msgid "Sorry, you are not allowed to edit posts in this post type."
+#~ msgstr "Beklager, du har ikke lov til å redigere innlegg i denne innleggstypen."
+
+#~ msgid "Sorry, you are not allowed to read license code."
+#~ msgstr "Beklager, du har ikke lov til å lese lisenskoden."
+
+#~ msgid "Sorry, you are not allowed to update license code."
+#~ msgstr "Beklager, du har ikke lov til å oppdatere lisenskoden."
+
+#~ msgid "You need to define a product_id to be sorted."
+#~ msgstr "Du må definere en produkt_id som skal sorteres."
+
+#~ msgid "You need to define a product_id above product to be sorted."
+#~ msgstr "Du må definere en produkt_id over produktet som skal sorteres."
+
+#~ msgid "You need to define a product_id below product to be sorted."
+#~ msgstr "Du må definere en produkt_id under produktet som skal sorteres."
+
+#~ msgid "Product to be ordered"
+#~ msgstr "Produkt som skal bestilles"
+
+#~ msgid "Product above new position"
+#~ msgstr "Produkt over ny posisjon"
+
+#~ msgid "Product below new position"
+#~ msgstr "Produkt under ny posisjon"
+
+#~ msgid "License code"
+#~ msgstr "Lisenskode"
+
+#~ msgid "Action to perform"
+#~ msgstr "Handling å utføre"
+
+#~ msgid "Unique identifier for the resource."
+#~ msgstr "Unik identifikator for ressursen."
+
+#~ msgid "Whether to bypass trash and force deletion."
+#~ msgstr "Om slettingen skal være permanent."
+
+#~ msgid "Sorry, you are not allowed to create resources."
+#~ msgstr "Beklager, du har ikke lov til å opprette ressurser."
+
+#~ msgid "Invalid parent type."
+#~ msgstr "Ugyldig foreldertype."
+
+#~ msgid "Alternative text to display when attachment is not displayed."
+#~ msgstr "Alternativ tekst som skal vises når vedlegg ikke vises."
+
+#~ msgid "The attachment caption."
+#~ msgstr "Bildetekst for vedlegg."
+
+#~ msgid "Caption for the attachment, as it exists in the database."
+#~ msgstr "Tittel for vedlegget, som det er i databasen."
+
+#~ msgid "HTML caption for the attachment, transformed for display."
+#~ msgstr "HTML bildetekst for vedlegget, ferdig til visning."
+
+#~ msgid "The attachment description."
+#~ msgstr "Vedleggsbeskrivelsen."
+
+#~ msgid "Description for the object, as it exists in the database."
+#~ msgstr "Beskrivelse for objektet, som det er i databasen."
+
+#~ msgid "HTML description for the object, transformed for display."
+#~ msgstr "HTML beskrivelse for objektet, ferdig til visning."
+
+#~ msgid "Attachment type."
+#~ msgstr "Vedleggstype."
+
+#~ msgid "The attachment MIME type."
+#~ msgstr "Vedleggets MIME-type."
+
+#~ msgid "Details about the media file, specific to its type."
+#~ msgstr "Detaljer om mediefilen, spesifikk for sin type."
+
+#~ msgid "The ID for the associated post of the attachment."
+#~ msgstr "ID tilknyttet innlegg i vedlegget."
+
+#~ msgid "URL to the original attachment file."
+#~ msgstr "URL til den opprinnelige vedleggsfilen."
+
+#~ msgid "No data supplied."
+#~ msgstr "Ingen data angitt."
+
+#~ msgid "No Content-Type supplied."
+#~ msgstr "Ingen innholdstype angitt."
+
+#~ msgid "No Content-Disposition supplied."
+#~ msgstr "Ingen Innholds-Disposisjon angitt."
+
+#~ msgid "Invalid Content-Disposition supplied. Content-Disposition needs to be formatted as `attachment; filename=\"image.png\"` or similar."
+#~ msgstr "Ugyldig innholdsleveranse angitt. Innholds-disposisjonen må formateres som `attachment; filename=image.png` eller lignende."
+
+#~ msgid "Content hash did not match expected."
+#~ msgstr "Hash samsvarer ikke med innhold."
+
+#~ msgid "Could not open file handle."
+#~ msgstr "Kunne ikke åpne filen."
+
+#~ msgid "Limit result set to attachments of a particular media type."
+#~ msgstr "Begrens resultat satt til vedlegg av en bestemt medietype."
+
+#~ msgid "Limit result set to attachments of a particular MIME type."
+#~ msgstr "Begrens resultat satt til vedlegg av en bestemt MIME type."
+
+#~ msgid "Invalid author ID."
+#~ msgstr "Ugyldig forfatter-ID."
+
+#~ msgid "A post can not be sticky and have a password."
+#~ msgstr "Et innlegg kan ikke være låst og ha et passord."
+
+#~ msgid "A sticky post can not be password protected."
+#~ msgstr "Et klebrig innlegg kan ikke være passordbeskyttet."
+
+#~ msgid "A password protected post can not be set to sticky."
+#~ msgstr "Et passordbeskyttet innlegg kan ikke settes til klebrig."
+
+#~ msgid "Invalid post parent ID."
+#~ msgstr "Ugyldig post forelder-ID."
+
+#~ msgid "The date the object was published, in the site's timezone."
+#~ msgstr "Datoen objektet ble publisert, i områdets tidssone."
+
+#~ msgid "The date the object was published, as GMT."
+#~ msgstr "Datoen objektet ble publisert, som GMT."
+
+#~ msgid "The globally unique identifier for the object."
+#~ msgstr "Den globalt unike identifikatoren for objektet."
+
+#~ msgid "GUID for the object, as it exists in the database."
+#~ msgstr "GUID for objektet, som det er i databasen."
+
+#~ msgid "GUID for the object, transformed for display."
+#~ msgstr "GUID for objektet, ferdig til visning."
+
+#~ msgid "Unique identifier for the object."
+#~ msgstr "Unik identifikator for objektet."
+
+#~ msgid "URL to the object."
+#~ msgstr "URL til objektet."
+
+#~ msgid "The date the object was last modified, in the site's timezone."
+#~ msgstr "Datoen objektet ble sist endret, i områdets tidssone."
+
+#~ msgid "The date the object was last modified, as GMT."
+#~ msgstr "Datoen objektet ble sist endret, som GMT."
+
+#~ msgid "An alphanumeric identifier for the object unique to its type."
+#~ msgstr "En alfanumerisk identifikator for objektet unikt for sin type."
+
+#~ msgid "A named status for the object."
+#~ msgstr "En navngitt status for objektet."
+
+#~ msgid "Type of Post for the object."
+#~ msgstr "Type post for objektet."
+
+#~ msgid "A password to protect access to the content and excerpt."
+#~ msgstr "Et passord for å beskytte tilgangen til innholdet og utdraget."
+
+#~ msgid "The ID for the parent of the object."
+#~ msgstr "ID for foreldren til objektet."
+
+#~ msgid "The title for the object."
+#~ msgstr "Tittelen for objektet."
+
+#~ msgid "Title for the object, as it exists in the database."
+#~ msgstr "Tittel for objektet, som det er i databasen."
+
+#~ msgid "HTML title for the object, transformed for display."
+#~ msgstr "HTML-tittel for objektet, ferdig til visning."
+
+#~ msgid "The content for the object."
+#~ msgstr "Innholdet for objektet."
+
+#~ msgid "Content for the object, as it exists in the database."
+#~ msgstr "Innhold for objektet, som det er i databasen."
+
+#~ msgid "HTML content for the object, transformed for display."
+#~ msgstr "HTML-innhold for objektet, ferdig til visning."
+
+#~ msgid "Whether the content is protected with a password."
+#~ msgstr "Om innholdet er beskyttet med et passord."
+
+#~ msgid "The ID for the author of the object."
+#~ msgstr "ID for forfatteren av objektet."
+
+#~ msgid "The excerpt for the object."
+#~ msgstr "Utdraget for objektet."
+
+#~ msgid "Excerpt for the object, as it exists in the database."
+#~ msgstr "Utdrag for objektet, som det finnes i databasen."
+
+#~ msgid "HTML excerpt for the object, transformed for display."
+#~ msgstr "HTML utdrag for objektet, forvandlet til visning."
+
+#~ msgid "Whether the excerpt is protected with a password."
+#~ msgstr "Hvorvidt utdraget er beskyttet med et passord."
+
+#~ msgid "The ID of the featured media for the object."
+#~ msgstr "IDen til de uthevede media for objektet."
+
+#~ msgid "Whether or not comments are open on the object."
+#~ msgstr "Om kommentarer er åpne på objektet."
+
+#~ msgid "Whether or not the object can be pinged."
+#~ msgstr "Om objektet kan pinges eller ikke."
+
+#~ msgid "The order of the object in relation to other object of its type."
+#~ msgstr "Ordren til objektet i forhold til andre gjenstander av sin type."
+
+#~ msgid "The format for the object."
+#~ msgstr "Formatet for objektet."
+
+#~ msgid "Whether or not the object should be treated as sticky."
+#~ msgstr "Hvorvidt objektet skal behandles som klebrig eller ikke."
+
+#~ msgid "The theme file to use to display the object."
+#~ msgstr "Temafilen som skal brukes til å vise objektet."
+
+#~ msgid "The terms assigned to the object in the %s taxonomy."
+#~ msgstr "Vilkårene som er tilordnet objektet i %s taksonomien."
+
+#~ msgid "Sorry, you are not allowed to use proxy."
+#~ msgstr "Beklager, du har ikke tillatelse til å bruke proxy."
+
+#~ msgid "An error occurred, please try again."
+#~ msgstr "En feil oppstod. Vennligst prøv igjen."
+
+#~ msgid "Your license key expired on %s."
+#~ msgstr "Lisensnøkkelen din utløp %s."
+
+#~ msgid "Your license key has been disabled."
+#~ msgstr "Lisensnøkkelen din er deaktivert."
+
+#~ msgid "Invalid license."
+#~ msgstr "Ugyldig lisens."
+
+#~ msgid "Your license is not active for this URL."
+#~ msgstr "Lisensen din er ikke aktiv for denne nettadressen."
+
+#~ msgid "This appears to be an invalid license key for %s."
+#~ msgstr "Dette ser ut til å være en ugyldig lisensnøkkel for %s."
+
+#~ msgid "Your license key has reached its activation limit."
+#~ msgstr "Lisensnøkkelen din har nådd aktiveringsgrensen."
+
+#~ msgid "There is a new version of %1$s available. %2$sView version %3$s details%4$s."
+#~ msgstr "Det er en ny versjon av %1$s tilgjengelig. %2$sVis versjon %3$s detaljer%4$s."
+
+#~ msgid "There is a new version of %1$s available. %2$sView version %3$s details%4$s or %5$supdate now%6$s."
+#~ msgstr "Det er en ny versjon av %1$s tilgjengelig. %2$sVis versjon %3$s detaljer%4$s eller %5$soppdater nå%6$s."
+
+#~ msgid "You do not have permission to install plugin updates"
+#~ msgstr "Du har ikke tillatelse til å installere plugin-oppdateringer"
+
+#~ msgid "Error"
+#~ msgstr "Feil"
+
+#~ msgid "Open in StorePilot"
+#~ msgstr "Åpne i StorePilot"

@@ -1,0 +1,211 @@
+[
+  {
+    "slug": "wc",
+    "default": true,
+    "requester": "oauth",
+    "config": {
+      "authentication": "oauth",
+      "version": "1.0a",
+      "type": "one_legged",
+      "algorithm": "HMAC-SHA1",
+      "authQuery": true,
+      "authHeader": false,
+      "indexArrays": true,
+      "addDataToQuery": true,
+      "timestampLength": 10,
+      "taleNonce": "",
+      "put": {
+        "override": {
+          "arg": "_method",
+          "method": "POST"
+        }
+      },
+      "delete": {
+        "authQuery": true,
+        "override": {
+          "arg": "_method",
+          "method": "POST"
+        }
+      }
+    },
+    "mappings": {
+      "index": {
+        "endpoint": "/wp-json/wc/v2/",
+        "batch": {
+          "save": "update"
+        }
+      },
+      "auth": {
+        "endpoint": "/wc-auth/v1/authorize",
+        "params": [
+          {
+            "key": "app_name",
+            "value": "storepilot"
+          },
+          {
+            "key": "scope",
+            "value": "read_write"
+          },
+          {
+            "key": "user_id",
+            "value": "1"
+          },
+          {
+            "key": "return_url",
+            "value": "https://proxy.output.one/tokens/my_token.php"
+          },
+          {
+            "key": "callback_url",
+            "value": "https://proxy.output.one?redirect_token=my_token"
+          }
+        ],
+        "batch": {
+          "save": "update"
+        }
+      },
+      "product": {
+        "endpoint": "/wp-json/wc/v2/products{/id}{/batch}",
+        "batch": {
+          "save": "update"
+        },
+        "identifier": "id",
+        "creationIdentifier": "meta_data=[{\"key\": \"sp_batch_create_id\", \"value\": \"identifier\" }]"
+      },
+      "review": {
+        "endpoint": "/wp-json/wc/v2/products/{parent_id}/reviews{/id}",
+        "batch": {
+          "save": "update"
+        },
+        "identifier": "id",
+        "creationIdentifier": "meta_data=[{\"key\": \"sp_batch_create_id\", \"value\": \"identifier\" }]"
+      },
+      "reviews": {
+        "endpoint": "/wp-json/wc/v2/products/{parent_id}/reviews{/batch}",
+        "multiple": true,
+        "child": "review",
+        "batch": {
+          "save": "update"
+        }
+      },
+      "productTag": {
+        "endpoint": "/wp-json/wc/v2/products/tags{/id}",
+        "batch": {
+          "save": "update"
+        },
+        "identifier": "id",
+        "creationIdentifier": "meta_data=[{\"key\": \"sp_batch_create_id\", \"value\": \"identifier\" }]"
+      },
+      "productCategory": {
+        "endpoint": "/wp-json/wc/v2/products/categories{/id}{/batch}",
+        "batch": {
+          "save": "update"
+        },
+        "identifier": "id",
+        "creationIdentifier": "meta_data=[{\"key\": \"sp_batch_create_id\", \"value\": \"identifier\" }]"
+      },
+      "productVariation": {
+        "endpoint": "/wp-json/wc/v2/products/{parent_id}/variations{/id}",
+        "batch": {
+          "save": "update"
+        },
+        "identifier": "id",
+        "creationIdentifier": "meta_data=[{\"key\": \"sp_batch_create_id\", \"value\": \"identifier\" }]"
+      },
+      "taxClass": {
+        "endpoint": "/wp-json/wc/v2/taxes/classes{/slug}",
+        "batch": {
+          "save": "update"
+        },
+        "identifier": "slug"
+      },
+      "productShippingClass": {
+        "endpoint": "/wp-json/wc/v2/products/shipping_classes{/id}",
+        "batch": {
+          "save": "update"
+        },
+        "identifier": "id"
+      },
+      "settingsGeneral": {
+        "endpoint": "/wp-json/wc/v2/settings/general{/id}",
+        "batch": {
+          "save": "update"
+        },
+        "identifier": "id"
+      },
+      "settingsProduct": {
+        "endpoint": "/wp-json/wc/v2/settings/products{/id}",
+        "batch": {
+          "save": "update"
+        },
+        "identifier": "id"
+      },
+      "productAttribute": {
+        "endpoint": "/wp-json/wc/v2/products/attributes{/id}",
+        "batch": {
+          "save": "update"
+        },
+        "identifier": "id"
+      },
+      "productAttributeTerm": {
+        "endpoint": "/wp-json/wc/v2/products/attributes/{parent_id}/terms{/id}",
+        "batch": {
+          "save": "update"
+        },
+        "identifier": "id"
+      }
+    }
+  },
+  {
+    "slug": "sp",
+    "requester": "oauth",
+    "config": {
+      "authentication": "oauth",
+      "version": "1.0a",
+      "type": "one_legged",
+      "algorithm": "HMAC-SHA1",
+      "authQuery": true,
+      "authHeader": false,
+      "indexArrays": true,
+      "addDataToQuery": true,
+      "timestampLength": 10,
+      "taleNonce": "",
+      "put": {
+        "override": {
+          "arg": "_method",
+          "method": "POST"
+        }
+      },
+      "delete": {
+        "override": {
+          "arg": "_method",
+          "method": "POST"
+        }
+      }
+    },
+    "mappings": {
+      "index": {
+        "endpoint": "/wp-json/wc/sp/v1",
+        "batch": {
+          "save": "update"
+        }
+      },
+      "media": {
+        "endpoint": "/wp-json/wc/sp/v1/media{/id}",
+        "batch": {
+          "save": "update"
+        },
+        "identifier": "id"
+      },
+      "orderProduct": {
+        "endpoint": "/wp-json/wc/sp/v1/actions/order_product",
+        "batch": {
+          "save": "update"
+        }
+      },
+      "license": {
+        "endpoint": "/wp-json/wc/sp/v1/actions/license",
+        "batch": {}
+      }
+    }
+  }
+]
