@@ -31,8 +31,6 @@ if (defined('ABSPATH') && !class_exists('StorePilot')) {
   define('SP_FILE', __FILE__ );
   $version = '1.0.0';
 
-  include_once(plugin_dir_path(__FILE__) . 'includes/i18n/storepilot_core_i18n.php');
-
   final class StorePilot extends StorePilotCoreTranslated
   {
 
