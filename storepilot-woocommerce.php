@@ -24,6 +24,8 @@
 
 if (defined('ABSPATH') && !class_exists('StorePilot')) {
 
+	include_once(plugin_dir_path(__FILE__) . 'includes/storepilot_core.php');
+
   /**
    * StorePilot version -  Used for Licensing
    * @var string
@@ -31,7 +33,7 @@ if (defined('ABSPATH') && !class_exists('StorePilot')) {
   define('SP_FILE', __FILE__ );
   $version = '1.0.0';
 
-  final class StorePilot
+  final class StorePilot extends StorePilotCore
   {
 
     /**
