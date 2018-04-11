@@ -31,7 +31,7 @@ if (defined('ABSPATH') && !class_exists('StorePilot')) {
   define('SP_FILE', __FILE__ );
   $version = '1.0.0';
 
-  final class StorePilot extends StorePilotCoreTranslated
+  final class StorePilot
   {
 
     /**
