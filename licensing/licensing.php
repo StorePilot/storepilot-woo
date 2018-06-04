@@ -64,7 +64,7 @@ class SP_LICENSING {
 		$license_key = trim( get_option( 'storepilot_license_key' ) );
 
 		// setup the updater
-		$storepilot_updater = new SP_PluginUpdater( $this->master_url, SP_FILE, array(
+		new SP_PluginUpdater( $this->master_url, SP_FILE, array(
 				'version' 	=> $this->version,
 				'license' 	=> $license_key,
 				'item_name' => $this->product_name,

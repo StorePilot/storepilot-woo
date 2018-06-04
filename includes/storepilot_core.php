@@ -232,28 +232,6 @@ if (!class_exists('StorePilotCore')) :
         return $price_range;
       }
 
-      function set_product_cat_header($value, $attr, $str, $request)
-      {
-        if ($value === 'null') {
-          $value = '';
-        }
-        $cat_id = (int)$request['id'];
-        update_option('term_product_cat_header_' . $cat_id, $value);
-        $attr->header = apply_filters('the_content', $value);
-        return $attr;
-      }
-
-      function set_product_cat_footer($value, $attr, $str, $request)
-      {
-        if ($value === 'null') {
-          $value = '';
-        }
-        $cat_id = (int)$request['id'];
-        update_option('term_product_cat_footer_' . $cat_id, $value);
-        $attr->footer = apply_filters('the_content', $value);
-        return $attr;
-      }
-
       function get_image_src($object)
       {
         if (isset($object['image']['id'])) {
@@ -277,16 +255,6 @@ if (!class_exists('StorePilotCore')) :
         return $object['image'];
       }
 
-      function get_product_category_permalink($object)
-      {
-        return get_term_link($object['slug'], 'product_cat');
-      }
-
-      function get_product_tag_permalink($object)
-      {
-        return get_term_link($object['slug'], 'product_tag');
-      }
-
       /** Get unrendered content START **/
       /** @see - https://github.com/woocommerce/woocommerce/issues/16895 @todo - It has now been fixed for products **/
       register_rest_field('product', 'description_raw', array('get_callback' => array($this, 'get_description_raw')));
@@ -294,8 +262,6 @@ if (!class_exists('StorePilotCore')) :
       register_rest_field('product', 'purchase_note_raw', array('get_callback' => array($this, 'get_purchase_note_raw')));
       register_rest_field('product_variation', 'description_raw', array('get_callback' => array($this, 'get_variation_description_raw')));
       register_rest_field('product_cat', 'description_raw', array('get_callback' => array($this, 'get_category_description_raw')));
-      register_rest_field('product_cat', 'header_raw', array('get_callback' => array($this, 'get_product_cat_header_raw')));
-      register_rest_field('product_cat', 'footer_raw', array('get_callback' => array($this, 'get_product_cat_footer_raw')));
       /** Get unrendered content END **/
 
       register_rest_field('product', 'price_range', array('get_callback' => 'get_price_range'));
@@ -304,16 +270,6 @@ if (!class_exists('StorePilotCore')) :
       register_rest_field('product', 'images', array('get_callback' => array($this, 'get_images_src')));
       register_rest_field('product_variation', 'image', array('get_callback' => 'get_image_src'));
       register_rest_field('product_cat', 'image', array('get_callback' => 'get_image_src'));
-      register_rest_field('product_cat', 'permalink', array('get_callback' => 'get_product_category_permalink'));
-      register_rest_field('product_cat', 'header', array(
-          'get_callback' => array($this, 'get_product_cat_header'),
-          'update_callback' => 'set_product_cat_header'
-      ));
-      register_rest_field('product_cat', 'footer', array(
-          'get_callback' => array($this, 'get_product_cat_footer'),
-          'update_callback' => 'set_product_cat_footer'
-      ));
-      register_rest_field('product_tag', 'permalink', array('get_callback' => 'get_product_tag_permalink'));
 
     }
 
@@ -637,10 +593,6 @@ if (!class_exists('StorePilotCore')) :
           'description' => $category->description,
           'description_raw' => $this->get_category_description_raw(['id' => $category->cat_ID]),
           'display' => $display ? $display : 'default',
-          'footer' => $this->get_product_cat_footer(['id' => $category->cat_ID]),
-          'footer_raw' => $this->get_product_cat_footer_raw(['id' => $category->cat_ID]),
-          'header' => $this->get_product_cat_header(['id' => $category->cat_ID]),
-          'header_raw' => $this->get_product_cat_header_raw(['id' => $category->cat_ID]),
           'image' => $image,
           'menu_order' => (int)get_term_meta($category->cat_ID, 'order', true),
           'name' => $category->name,
@@ -705,24 +657,6 @@ if (!class_exists('StorePilotCore')) :
         $val = '';
       }
       return apply_filters('the_content', $val ? $val : '');
-    }
-
-    function get_product_cat_header_raw($object)
-    {
-      $val = get_option('term_product_cat_header_' . $object['id']);
-      if ($val === 'null') {
-        $val = '';
-      }
-      return $val ? $val : '';
-    }
-
-    function get_product_cat_footer_raw($object)
-    {
-      $val = get_option('term_product_cat_footer_' . $object['id']);
-      if ($val === 'null') {
-        $val = '';
-      }
-      return $val ? $val : '';
     }
 
     function get_images_src($object)
