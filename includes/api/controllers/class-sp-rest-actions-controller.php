@@ -40,21 +40,6 @@ class SP_REST_Actions_Controller {
           'args'                => $this->get_ordering_collection_params()
         ))
     );
-    register_rest_route( $this->namespace, '/actions/license', array(
-        array(
-          'methods'             => WP_REST_Server::READABLE,
-          'callback'            => array( $this, 'get_license' ),
-          'permission_callback' => array( $this, 'get_license_permissions_check' ),
-          'args'                => array()
-        ),
-        array(
-          'methods'             => WP_REST_Server::CREATABLE,
-          'callback'            => array( $this, 'post_license' ),
-          'permission_callback' => array( $this, 'post_license_permissions_check' ),
-          'args'                => $this->get_license_collection_params()
-        )
-      )
-    );
 	}
 
 	/**
@@ -77,44 +62,6 @@ class SP_REST_Actions_Controller {
 
 		return true;
 	}
-
-  /**
-   * Checks if a given request has access to read posts.
-   *
-   * @since 1.0.0
-   * @access public
-   *
-   * @param  WP_REST_Request $request Full details about the request.
-   * @return true|WP_Error True if the request has read access, WP_Error object otherwise.
-   */
-  public function get_license_permissions_check( $request ) {
-
-    if ( ! current_user_can('edit_posts' ) ) {
-      return new WP_Error( 'rest_forbidden_context', __( 'Sorry, you are not allowed to read license code.' ), array( 'status' => rest_authorization_required_code() ) );
-    }
-    rest_send_cors_headers( null ); // Allow cors when dealing with actions
-
-    return true;
-  }
-
-  /**
-   * Checks if a given request has access to update posts.
-   *
-   * @since 1.0.0
-   * @access public
-   *
-   * @param  WP_REST_Request $request Full details about the request.
-   * @return true|WP_Error True if the request has read access, WP_Error object otherwise.
-   */
-  public function post_license_permissions_check( $request ) {
-
-    if ( ! current_user_can('manage_options' ) ) {
-      return new WP_Error( 'rest_forbidden_context', __( 'Sorry, you are not allowed to update license code.' ), array( 'status' => rest_authorization_required_code() ) );
-    }
-    rest_send_cors_headers( null ); // Allow cors when dealing with actions
-
-    return true;
-  }
 
   /**
    * Retrieves a collection of posts.
@@ -153,59 +100,6 @@ class SP_REST_Actions_Controller {
   }
 
   /**
-   * Retrieves license code
-   *
-   * @since 1.0.0
-   * @access public
-   *
-   * @param WP_REST_Request $request Full details about the request.
-   * @return WP_REST_Response|WP_Error Response object on success, or WP_Error object on failure.
-   */
-  public function get_license( $request ) {
-
-    global $sp_license;
-    return wp_send_json( array(
-      'license' => $sp_license->get_license(),
-      'status' => $sp_license->get_license_status()
-    ));
-
-  }
-
-  /**
-   * Updates license code
-   *
-   * @since 1.0.0
-   * @access public
-   *
-   * @param WP_REST_Request $request Full details about the request.
-   * @return WP_REST_Response|WP_Error Response object on success, or WP_Error object on failure.
-   */
-  public function post_license( $request ) {
-
-    $axios = $request->get_params(); // Expects axios request configuration
-    $license_code = isset($axios['license']) ? $axios['license'] : '';
-    $method = isset($axios['method']) ? $axios['method'] : '';
-
-    global $sp_license;
-
-    switch($method) {
-      case 'validate':
-        $response = $sp_license->storepilot_check_license($license_code);
-        break;
-      case 'activate':
-        $response = $sp_license->storepilot_activate_license($license_code);
-        break;
-      case 'deactivate':
-        $response = $sp_license->storepilot_deactivate_license($license_code);
-        break;
-      default:
-        $response = null;
-    }
-
-    return wp_send_json($response);
-  }
-
-  /**
    * Retrieves the query params for collections of attachments.
    *
    * @since 1.0.0
@@ -232,33 +126,6 @@ class SP_REST_Actions_Controller {
     $params['next_id'] = array(
       'default'           => null,
       'description'       => __( 'Product below new position' ),
-      'type'              => 'string'
-    );
-
-    return $params;
-  }
-
-  /**
-   * Retrieves the query params for collections of attachments.
-   *
-   * @since 1.0.0
-   * @access public
-   *
-   * @return array Query parameters for the attachment collection as an array.
-   */
-  public function get_license_collection_params() {
-    $params['status']['default'] = 'inherit';
-    $params['status']['items']['enum'] = array( 'inherit', 'private', 'trash' );
-
-    $params['license'] = array(
-      'default'           => null,
-      'description'       => __( 'License code' ),
-      'type'              => 'string'
-    );
-
-    $params['method'] = array(
-      'default'           => null,
-      'description'       => __( 'Action to perform' ),
       'type'              => 'string'
     );
 

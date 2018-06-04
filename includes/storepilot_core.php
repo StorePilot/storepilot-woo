@@ -21,42 +21,6 @@ if (!class_exists('StorePilotCore')) :
   {
 
     /**
-     * Product Name (ID) - Used for Licensing
-     * @var string
-     */
-    public $product_name = 'StorePilot';
-
-    /**
-     * Master Url - Used for Licensing
-     * @var string
-     */
-    public $master_url = 'https://storepilot.com';
-
-    /**
-     * Require authentication through SSL -  Used for Licensing
-     * @var bool
-     */
-    public $require_ssl = false;
-
-    /**
-     * StorePilot version -  Used for Licensing
-     * @var string
-     */
-    public $version = '1.0.0';
-
-    /**
-     * Beta -  Used for Licensing
-     * @var bool
-     */
-    public $beta = false;
-
-    /**
-     * Author -  Used for Licensing
-     * @var bool
-     */
-    public $author = 'StorePilot AS';
-
-    /**
      * The single instance of the class
      * @var StorePilot
      * @since 1.0.0
@@ -88,31 +52,8 @@ if (!class_exists('StorePilotCore')) :
     {
       $this->version = $version;
       do_action('before_storepilot_constructed');
-      if ($this->has_woocommerce() && get_option('permalink_structure')) {
-        $this->includes();
-      }
       $this->init();
       do_action('after_storepilot_constructed');
-    }
-
-    /**
-     * Include required core files used in admin and on the frontend
-     */
-    public function includes()
-    {
-      /**
-       * Licensing
-       */
-      include_once(plugin_dir_path(__FILE__) . '../licensing/licensing.php');
-      global $sp_license;
-      $this->licensing = $sp_license = new SP_LICENSING(
-          $this->product_name,
-          $this->master_url,
-          $this->version,
-          $this->beta,
-          $this->require_ssl,
-          $this->author
-      );
     }
 
     /**
