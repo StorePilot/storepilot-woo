@@ -265,8 +265,6 @@ if (!class_exists('StorePilotCore')) :
       /** Get unrendered content END **/
 
       register_rest_field('product', 'price_range', array('get_callback' => 'get_price_range'));
-      register_rest_field('product', 'cross_sell', array('get_callback' => array($this, 'get_cross_sell')));
-      register_rest_field('product', 'upsell', array('get_callback' => array($this, 'get_upsell')));
       register_rest_field('product', 'images', array('get_callback' => array($this, 'get_images_src')));
       register_rest_field('product_variation', 'image', array('get_callback' => 'get_image_src'));
       register_rest_field('product_cat', 'image', array('get_callback' => 'get_image_src'));
