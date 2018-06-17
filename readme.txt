@@ -1,6 +1,6 @@
 === StorePilot 1.0.0 ===
 Contributors: Steffan Halvorsen, Tommy Vedvik
-Tags: woocommerce, manager, store, pilot, products, schedule, dynamic, product, dashboard, frontend, editor
+Tags: storepilot, woocommerce, manager, shop, store, products, product, schedule, dynamic, dashboard, editor
 Requires at least: 4.4.0
 Tested up to: 4.9.4
 Stable tag: 4.9.4
@@ -9,29 +9,28 @@ URI: https://storepilot.com/license/
 WC requires at least: 3.2.6
 WC tested up to: 3.3.3
 
-StorePilot extends your woocommerce experience with professional desktop management tools.
+StorePilot is a desktop application which makes WooCommerce easily accessible from your Desktop
 
 == Description ==
 
-StorePilot is a management tool specialized to suit your selling and warehouse needs right into your desktop.
+This plugin extends StorePilot with extra functionality, but IS NOT required to run StorePilot.
 
-Major features in StorePilot include:
+Additional features will be available as:
 
-* Drag & Drop product manager
-* Frontend Editor
-* Inline table editor
-* Grid view
-* Super fast editor
-* Duplicate and edit with context menu
-* Sleek design
-* Manage your products 10 x faster!
+* Custom product sorting
+* Custom sale label for product sales
+* Faster file upload
+* Extends file upload to support any filetypes
 
-Visit [our website](https://storepilot.com/) for documentation.
+This plugin is completely free, no extra fees are added.
+
+Visit [our homepage](https://storepilot.com/) for more information.
 
 == Installation ==
 
-Upload the StorePilot plugin to your WooCommerce site & Activate it.
-Then connect to your site from StorePilot Desktop Application.
+1. Install & Activate WooCommerce if not already done
+2. Download StorePilot desktop application from [our homepage](https://storepilot.com/)
+3. Install this plugin to get the additional features in your application
 
 Good luck with your sales!
 
@@ -39,6 +38,4 @@ Good luck with your sales!
 
 = 1.0.0 =
 
-* First Release *
-
-* StorePilot released
+* First release
