@@ -5,7 +5,6 @@
  * Description: StorePilot is a product management application, making WooCoomerce available from the Desktop.
  * Version: 1.0.0
  * Author: StorePilot AS
- * Author URI: https://storepilot.com
  * Requires at least: 4.4
  * Tested up to: 4.9
  *
