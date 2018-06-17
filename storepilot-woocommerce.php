@@ -12,8 +12,8 @@
  * Text Domain: storepilot
  *
  * Copyright: © 2018 StorePilot AS
- * License: StorePilot
- * License URI: https://storepilot.com/license/
+ * License: GPLv3
+ * License URI: https://www.gnu.org/licenses/gpl.html
  *
  * @link https://storepilot.com
  * @package StorePilot
