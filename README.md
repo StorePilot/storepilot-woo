@@ -4,8 +4,8 @@
 - Requires at least: 4.4.0
 - Tested up to: 4.9.4
 - Stable tag: 4.9.4
-- License: StorePilot
-- URI: https://storepilot.com/license/
+- License: GPLv3
+- License URI: https://www.gnu.org/licenses/gpl.html
 - WC requires at least: 3.2.6
 - WC tested up to: 3.3.3
 
