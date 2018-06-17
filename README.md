@@ -1,12 +1,19 @@
 ## StorePilot 1.0.0
 
 Tags: storepilot, woocommerce, manager, shop, store, products, product, schedule, dynamic, dashboard, editor
+
 Requires at least: 4.4.0
+
 Tested up to: 4.9.4
+
 Stable tag: 4.9.4
+
 License: StorePilot
+
 URI: https://storepilot.com/license/
+
 WC requires at least: 3.2.6
+
 WC tested up to: 3.3.3
 
 StorePilot is a desktop application which makes WooCommerce easily accessible from your Desktop
