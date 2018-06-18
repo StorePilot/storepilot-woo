@@ -1,4 +1,4 @@
-=== StorePilot 1.0.0 ===
+=== StorePilot 1.0.1 ===
 Contributors: Steffan Halvorsen, Tommy Vedvik
 Tags: storepilot, woocommerce, manager, shop, store, products, product, schedule, dynamic, dashboard, editor
 Requires at least: 4.4.0
@@ -26,6 +26,8 @@ This plugin is completely free, no extra fees are added.
 
 Visit [our homepage](https://storepilot.com/) for more information.
 
+For issues & feature requests, please visit [our GitHub repo](https://github.com/StorePilot/storepilot-woo)
+
 == Installation ==
 
 1. Install & Activate WooCommerce if not already done
@@ -35,6 +37,10 @@ Visit [our homepage](https://storepilot.com/) for more information.
 Good luck with your sales!
 
 == Changelog ==
+
+= 1.0.1 =
+
+* Fixed name
 
 = 1.0.0 =
 
