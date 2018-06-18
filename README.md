@@ -1,4 +1,4 @@
-## StorePilot 1.0.1
+## StorePilot-Woo 1.0.1
 
 - Tags: storepilot, woocommerce, manager, shop, store, products, product, schedule, dynamic, dashboard, editor
 - Requires at least: 4.4.0
