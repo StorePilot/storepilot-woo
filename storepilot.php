@@ -3,7 +3,7 @@
  * Plugin Name: StorePilot-Woo
  * Plugin URI: https://storepilot.com
  * Description: StorePilot is a product management application, making WooCoomerce available from the Desktop.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: StorePilot AS
  * Requires at least: 4.4
  * Tested up to: 4.9
@@ -29,7 +29,6 @@ if (defined('ABSPATH') && !class_exists('StorePilot')) {
    * @var string
    */
   define('SP_FILE', __FILE__ );
-  $version = '1.0.0';
 
   final class StorePilot extends StorePilotCore
   {
@@ -44,10 +43,10 @@ if (defined('ABSPATH') && !class_exists('StorePilot')) {
      * @see SP()
      * @return StorePilot - Main instance
      */
-    public static function instance($version)
+    public static function instance()
     {
       if (is_null(self::$_instance)) {
-        self::$_instance = new self($version);
+        self::$_instance = new self();
       }
       return self::$_instance;
     }
@@ -62,13 +61,13 @@ if (defined('ABSPATH') && !class_exists('StorePilot')) {
    * @since  1.0.0
    * @return StorePilot
    */
-  function SP($version)
+  function SP()
   {
-    return StorePilot::instance($version);
+    return StorePilot::instance();
   }
 
   // Fire Constructor
-  $SP = SP($version);
+  $SP = SP();
 
 } else {
   exit; // Exit if accessed directly or SP already defined

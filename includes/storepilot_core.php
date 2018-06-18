@@ -15,7 +15,7 @@ if (!class_exists('StorePilotCore')) :
    * Main StorePilot Class
    *
    * @class StorePilot
-   * @version SP_VERSION_REPLACE
+   * @since 1.0.0
    */
   abstract class StorePilotCore
   {
@@ -48,9 +48,8 @@ if (!class_exists('StorePilotCore')) :
     /**
      * StorePilot Constructor
      */
-    public function __construct($version = '1.0.0')
+    public function __construct()
     {
-      $this->version = $version;
       do_action('before_storepilot_constructed');
       $this->init();
       do_action('after_storepilot_constructed');
