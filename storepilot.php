@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name: StorePilot-Woo
+ * Plugin Name: StorePilot
  * Plugin URI: https://storepilot.com
  * Description: StorePilot is a product management application, making WooCoomerce available from the Desktop.
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: StorePilot AS
  * Requires at least: 4.4
  * Tested up to: 4.9
