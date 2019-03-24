@@ -6,7 +6,7 @@
  * Version: 1.0.5
  * Author: StorePilot AS
  * Requires at least: 4.4
- * Tested up to: 5.0
+ * Tested up to: 5.1
  *
  * Text Domain: storepilot
  *
