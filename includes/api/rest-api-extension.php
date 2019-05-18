@@ -42,7 +42,7 @@ class SP_API extends WC_API {
 	 *
 	 * @since 1.0.0
 	 */
-	private function rest_api_includes() {
+	public function rest_api_includes() {
 
 		// REST API v1 controllers
 		include_once( dirname( __FILE__ ) . '/controllers/class-sp-rest-actions-controller.php' );
