@@ -32,6 +32,11 @@ function wc_rest_api_filter_support_addon( $args, $request ) {
 	$filter = $request['filter'];
 	global $wp;
 	$vars = apply_filters( 'woocommerce_rest_query_vars', $wp->public_query_vars );
+	function allow_meta_query( $valid_vars ) {
+		$valid_vars = array_merge( $valid_vars, array( 'meta_query', 'meta_key', 'meta_value', 'meta_compare' ) );
+		return $valid_vars;
+	}
+	$vars = allow_meta_query( $vars );
 	foreach ( $vars as $var ) {
 		if ( isset( $filter[ $var ] ) ) {
 			$args[ $var ] = $filter[ $var ];

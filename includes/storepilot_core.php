@@ -27,6 +27,8 @@ if (!class_exists('StorePilotCore')) :
      */
     protected static $_instance = null;
 
+    private $message = '';
+
     /**
      * Cloning is forbidden
      * @since 1.0.0
@@ -63,7 +65,12 @@ if (!class_exists('StorePilotCore')) :
       do_action('before_storepilot_init');
 
       // Init hooks
-      $this->init_hooks();
+      try {
+        $this->init_hooks();
+      } catch (Throwable $e) {
+        $this->message = $e->getMessage();
+        add_action( 'admin_notices', [ $this, 'admin_notice_minimum_php_version' ] );
+      }
 
       do_action('after_storepilot_init');
     }
@@ -124,6 +131,10 @@ if (!class_exists('StorePilotCore')) :
         'type' => 'string',
         'show_in_rest' => 'true'
       ));
+      register_setting( 'general', 'storepilot_barcode_meta', array(
+        'type' => 'string',
+        'show_in_rest' => 'true'
+      ));
     }
 
     public function extend_rest_api()
@@ -151,8 +162,7 @@ if (!class_exists('StorePilotCore')) :
      * Check if woocommerce is larger or equal to 3.0.8 and is Active
      * @return bool
      */
-    function has_woocommerce()
-    {
+    public function has_woocommerce() {
       // Dependencies
       $woocommerce = in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_option('active_plugins'))) ? true : false;
       // Set false if wc version is less than 3.0.8
@@ -168,8 +178,7 @@ if (!class_exists('StorePilotCore')) :
     /**
      * Get WooCommerce Version
      */
-    function get_woocommerce_version()
-    {
+    public function get_woocommerce_version() {
       // If get_plugins() isn't available, require it
       if (!function_exists('get_plugins')) {
         require_once(ABSPATH . 'wp-admin/includes/plugin.php');
@@ -191,8 +200,7 @@ if (!class_exists('StorePilotCore')) :
     /**
      * Get additional image sizes for product images
      */
-    function add_additional_rest_fields()
-    {
+    public function add_additional_rest_fields() {
 
       function get_price_range($object)
       {
@@ -257,8 +265,7 @@ if (!class_exists('StorePilotCore')) :
 
     }
 
-    function get_description_raw($object)
-    {
+    public function get_description_raw($object) {
       if (is_array($object)) {
         $product = wc_get_product($object['id']);
       } else {
@@ -267,8 +274,7 @@ if (!class_exists('StorePilotCore')) :
       return $product->get_description();
     }
 
-    function get_short_description_raw($object)
-    {
+    public function get_short_description_raw($object) {
       if (is_array($object)) {
         $product = wc_get_product($object['id']);
       } else {
@@ -277,8 +283,7 @@ if (!class_exists('StorePilotCore')) :
       return $product->get_short_description();
     }
 
-    function get_purchase_note_raw($object)
-    {
+    public function get_purchase_note_raw($object) {
       if (is_array($object)) {
         $product = wc_get_product($object['id']);
       } else {
@@ -287,18 +292,15 @@ if (!class_exists('StorePilotCore')) :
       return $product->get_purchase_note();
     }
 
-    function get_variation_description_raw($object)
-    {
+    public function get_variation_description_raw($object) {
       return $object['description'];
     }
 
-    function get_category_description_raw($object)
-    {
+    public function get_category_description_raw($object) {
       return category_description($object['id']);
     }
 
-    function get_images_src($object)
-    {
+    public function get_images_src($object) {
       $updated = [];
       foreach ($object['images'] as $image) {
         $image['src_thumbnail'] = wp_get_attachment_image_src($image['id'], 'thumbnail')[0];
@@ -321,6 +323,18 @@ if (!class_exists('StorePilotCore')) :
       }
       return $updated;
     }
+
+    public function admin_warning() {
+  
+      $message = sprintf(
+        esc_html__( 'StorePilot can not load, ensure you have the latest version installed', 'storepilot' ),
+        '<strong>' . esc_html__( $this->message, 'storepilot' ) . '</strong>'
+      );
+  
+      printf( '<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', $message );
+  
+    }
+  
 
   }
 

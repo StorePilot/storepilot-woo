@@ -64,6 +64,15 @@ we believe this will simplify your daily work.
 
 == Changelog ==
 
+= 1.1.0 =
+
+* Made stricted typed functions inherit from parent, because php does not catch fatal errors
+
+= 1.0.9 =
+
+* Added error catcher if StorePilot can not load because of changes by WooCommerce
+* Added support for barcode scanner customization
+
 = 1.0.8 =
 
 * Updated settings storage for futured StorePilot versions

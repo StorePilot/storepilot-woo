@@ -20,7 +20,7 @@ class SP_API extends WC_API {
 	 * Setup class.
 	 * @since 1.0.0
 	 */
-	public function __construct() {
+	function __construct() {
 
 		$this->rest_api_init();
 
@@ -30,7 +30,7 @@ class SP_API extends WC_API {
 	 * Init SP REST API.
 	 * @since 1.0.0
 	 */
-	private function rest_api_init() {
+	function rest_api_init() {
 
 		$this->rest_api_includes();
 		add_action( 'rest_api_init', array( $this, 'register_rest_routes' ), 10 );
@@ -42,7 +42,7 @@ class SP_API extends WC_API {
 	 *
 	 * @since 1.0.0
 	 */
-	public function rest_api_includes() {
+	function rest_api_includes() {
 
 		// REST API v1 controllers
 		include_once( dirname( __FILE__ ) . '/controllers/class-sp-rest-actions-controller.php' );
@@ -54,7 +54,7 @@ class SP_API extends WC_API {
 	 * Register REST API routes.
 	 * @since 1.0.0
 	 */
-	public function register_rest_routes() {
+	function register_rest_routes() {
 
 		$controllers = array(
 
