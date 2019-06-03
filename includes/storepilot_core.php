@@ -135,6 +135,10 @@ if (!class_exists('StorePilotCore')) :
         'type' => 'string',
         'show_in_rest' => 'true'
       ));
+      register_setting( 'general', 'storepilot_tax_state', array(
+        'type' => 'string',
+        'show_in_rest' => 'true'
+      ));
     }
 
     public function extend_rest_api()

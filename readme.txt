@@ -64,6 +64,10 @@ we believe this will simplify your daily work.
 
 == Changelog ==
 
+= 1.1.1 =
+
+* Added tax support for POS 
+
 = 1.1.0 =
 
 * Made stricted typed functions inherit from parent, because php does not catch fatal errors
