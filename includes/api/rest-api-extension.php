@@ -46,6 +46,7 @@ class SP_API extends WC_API {
 
 		// REST API v1 controllers
 		include_once( dirname( __FILE__ ) . '/controllers/class-sp-rest-actions-controller.php' );
+		include_once( dirname( __FILE__ ) . '/controllers/class-sp-rest-translation-controller.php' );
 		include_once( dirname( __FILE__ ) . '/controllers/class-sp-rest-attachments-controller.php' );
 
 	}
@@ -58,8 +59,9 @@ class SP_API extends WC_API {
 
 		$controllers = array(
 
-            // REST API v1 controllers
+			// REST API v1 controllers
 			'SP_REST_Actions_Controller',
+			'SP_REST_Translation_Controller',
 			'SP_REST_Attachments_Controller'
 
 		);

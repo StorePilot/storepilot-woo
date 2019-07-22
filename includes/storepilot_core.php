@@ -85,60 +85,33 @@ if (!class_exists('StorePilotCore')) :
       add_action('rest_api_init', array($this, 'add_additional_rest_fields'));
       add_filter('woocommerce_loaded', array($this, 'extend_rest_api'));
       add_filter('woocommerce_sale_flash', array($this, 'sale_flash'));
-      // $_SERVER['REQUEST_URI']
-      add_filter( 'woocommerce_rest_is_request_to_rest_api', '__return_true' );
-      register_setting( 'general', 'storepilot_invoice_company', array(
-        'type' => 'string',
-        'show_in_rest' => 'true'
-      ));
-      register_setting( 'general', 'storepilot_invoice_email', array(
-        'type' => 'string',
-        'show_in_rest' => 'true'
-      ));
-      register_setting( 'general', 'storepilot_logo', array(
-        'type' => 'string',
-        'show_in_rest' => 'true'
-      ));
-      register_setting( 'general', 'storepilot_invoice_phone', array(
-        'type' => 'string',
-        'show_in_rest' => 'true'
-      ));
-      register_setting( 'general', 'storepilot_invoice_address', array(
-        'type' => 'string',
-        'show_in_rest' => 'true'
-      ));
-      register_setting( 'general', 'storepilot_invoice_zip', array(
-        'type' => 'string',
-        'show_in_rest' => 'true'
-      ));
-      register_setting( 'general', 'storepilot_invoice_city', array(
-        'type' => 'string',
-        'show_in_rest' => 'true'
-      ));
-      register_setting( 'general', 'storepilot_invoice_country', array(
-        'type' => 'string',
-        'show_in_rest' => 'true'
-      ));
-      register_setting( 'general', 'storepilot_invoice_bankaccount', array(
-        'type' => 'string',
-        'show_in_rest' => 'true'
-      ));
-      register_setting( 'general', 'storepilot_invoice_logo', array(
-        'type' => 'string',
-        'show_in_rest' => 'true'
-      ));
-      register_setting( 'general', 'storepilot_stripe_secret', array(
-        'type' => 'string',
-        'show_in_rest' => 'true'
-      ));
-      register_setting( 'general', 'storepilot_barcode_meta', array(
-        'type' => 'string',
-        'show_in_rest' => 'true'
-      ));
-      register_setting( 'general', 'storepilot_tax_state', array(
-        'type' => 'string',
-        'show_in_rest' => 'true'
-      ));
+      add_filter('woocommerce_rest_is_request_to_rest_api', '__return_true');
+      $this->register_settings();
+    }
+
+    public function register_settings()
+    {
+      $settings = [
+        'storepilot_invoice_company',
+        'storepilot_invoice_email',
+        'storepilot_logo',
+        'storepilot_invoice_phone',
+        'storepilot_invoice_address',
+        'storepilot_invoice_zip',
+        'storepilot_invoice_city',
+        'storepilot_invoice_country',
+        'storepilot_invoice_bankaccount',
+        'storepilot_invoice_logo',
+        'storepilot_stripe_secret',
+        'storepilot_barcode_meta',
+        'storepilot_tax_state'
+      ];
+      foreach($settings as $setting) {
+        register_setting( 'general', $setting, array(
+          'type' => 'string',
+          'show_in_rest' => 'true'
+        ));
+      }
     }
 
     public function extend_rest_api()

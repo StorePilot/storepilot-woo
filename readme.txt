@@ -66,7 +66,7 @@ we believe this will simplify your daily work.
 
 = 1.1.1 =
 
-* Added tax support for POS 
+* Added tax support for POS
 
 = 1.1.0 =
 
