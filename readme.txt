@@ -64,6 +64,10 @@ we believe this will simplify your daily work.
 
 == Changelog ==
 
+= 1.1.2 =
+
+* Made translation ready for coming release
+
 = 1.1.1 =
 
 * Added tax support for POS
