@@ -80,6 +80,22 @@ class SP_REST_Translation_Controller {
     return wp_send_json([
 
       // @todo - Needs review  - some could be replaced by woo
+      [ key => "Loading...", value => __("Loading...", "storepilot") ],
+      [ key => "Not found", value => __("Not found", "storepilot") ],
+      [ key => "Detach", value => __("Detach", "storepilot") ],
+      [ key => "Opens in default browser", value => __("Opens in default browser", "storepilot") ],
+      [ key => "Alt text", value => __("Alt text", "storepilot") ],
+      [ key => "Caption", value => __("Caption", "storepilot") ],
+      [ key => "Author ID", value => __("Author ID", "storepilot") ],
+      [ key => "month", value => __("month", "storepilot") ],
+      [ key => "year", value => __("year", "storepilot") ],
+      [ key => "week", value => __("week", "storepilot") ],
+      [ key => "Media Manager", value => __("Media Manager", "storepilot") ],
+      [ key => "Comment status", value => __("Comment status", "storepilot") ],
+      [ key => "Ping status", value => __("Ping status", "storepilot") ],
+      [ key => "Media type", value => __("Media type", "storepilot") ],
+      [ key => "Mime type", value => __("Mime type", "storepilot") ],
+      [ key => "Sizes", value => __("Sizes", "storepilot") ],
       [ key => "Please select customer", value => __("Please select customer", "storepilot") ],
       [ key => "Please select product", value => __("Please select product", "storepilot") ],
       [ key => "Please select media", value => __("Please select media", "storepilot") ],
