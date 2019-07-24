@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: StorePilot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-24 00:47+0000\n"
+"POT-Creation-Date: 2019-07-24 01:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -15,492 +15,528 @@ msgstr ""
 "X-Generator: Loco https://localise.biz/\n"
 "X-Loco-Version: 2.3.0; wp-5.1.1"
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:403
+#: includes/api/controllers/class-sp-rest-translation-controller.php:424
 msgid "- Is currently active on this machine"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:286
+#: includes/api/controllers/class-sp-rest-translation-controller.php:307
 msgid "a store"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:124
+#: includes/api/controllers/class-sp-rest-translation-controller.php:145
 msgid "Activate Stripe terminal for Point of Sale"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:239
+#: includes/api/controllers/class-sp-rest-translation-controller.php:260
 msgid "Activated v."
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:274
+#: includes/api/controllers/class-sp-rest-translation-controller.php:295
 msgid "Activity"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:221
+#: includes/api/controllers/class-sp-rest-translation-controller.php:242
 msgid "Add Fee"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:214
+#: includes/api/controllers/class-sp-rest-translation-controller.php:235
 msgid "Added to category"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:213
+#: includes/api/controllers/class-sp-rest-translation-controller.php:234
 msgid "Added to tag"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:309
+#: includes/api/controllers/class-sp-rest-translation-controller.php:330
 msgid "Additional"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:109
+#: includes/api/controllers/class-sp-rest-translation-controller.php:130
 msgid "Address"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:170
+#: includes/api/controllers/class-sp-rest-translation-controller.php:191
 msgid "Address 1"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:171
+#: includes/api/controllers/class-sp-rest-translation-controller.php:192
 msgid "Address 2"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:290
+#: includes/api/controllers/class-sp-rest-translation-controller.php:311
 msgid "after expiration"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:233
-msgid "Always using Secure Socket Layer"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:293
-msgid "An update has been downloaded."
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:145
-msgid "Any"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:243
-msgid "API"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:317
-msgid "Append"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:206
-msgid "Appended"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:316
-msgid "Archives"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:131
-msgid "as default"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:94
-msgid "asc"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:311
-msgid "Attach"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:315
-msgid "Attach a new store"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:314
-msgid "Attach attribute"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:313
-msgid "Attach term"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:312
-msgid "Attached to post"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:310
-msgid "Attributes editor"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:297
-msgid "Automatic updates and reactivation on other machines has been blocked."
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:259
-msgid "Average sales"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:113
-msgid "Bank account number"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:318
-msgid "Barcode"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:105
-msgid "Barcode scanner"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:280
-msgid "Best sellers"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:148
-msgid "Billing"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:321
-msgid "Bought!"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:319
-msgid "Bulk edit"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:320
-msgid "Bullet list"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:322
-msgid "By"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:142
-msgid "Cancelled"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:329
-#: includes/api/controllers/class-sp-rest-translation-controller.php:331
-msgid "Cart hash"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:157
-msgid "Cart tax"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:323
-msgid "Cash"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:324
-msgid "Cash out"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:306
-msgid "Category slug"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:305
-msgid "Category title"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:268
-msgid "Charts grouped by"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:111
-msgid "City"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:222
-msgid "Clear Items"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:326
-msgid "Clear sale"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:177
-msgid "Code"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:169
-msgid "Company"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:108
-msgid "Company name"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:178
-msgid "Compound"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:200
-msgid "Could not create order"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:112
-msgid "Country"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:183
-msgid "Coupon line"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:139
-msgid "Created"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:328
-msgid "Created via"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:255
-msgid "Currency"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:227
-msgid "Currency position"
+#: includes/api/controllers/class-sp-rest-translation-controller.php:91
+msgid "Alt text"
 msgstr ""
 
 #: includes/api/controllers/class-sp-rest-translation-controller.php:254
-msgid "Currency symbol"
+msgid "Always using Secure Socket Layer"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:89
-msgid "current month"
+#: includes/api/controllers/class-sp-rest-translation-controller.php:314
+msgid "An update has been downloaded."
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:249
-msgid "Current version"
+#: includes/api/controllers/class-sp-rest-translation-controller.php:166
+msgid "Any"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:88
-msgid "current week"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:90
-msgid "current year"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:92
-msgid "Custom fee"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:332
-msgid "Custom sorting"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:87
-msgid "Customer"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:151
-msgid "Customer ID"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:191
-msgid "Customer note"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:262
-msgid "Customer purchases"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:282
-msgid "Dashboard"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:273
-msgid "Day"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:334
-msgid "Deactivate"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:252
-msgid "Decimal separator"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:333
-msgid "Decrease"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:209
-msgid "Decreased"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:336
-msgid "Delete all permanently"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:335
-msgid "Delete product permanently"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:337
-msgid "Delete variation"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:165
-msgid "Delivery notice"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:193
-msgid "Delivery notice for order #"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:95
-msgid "desc"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:217
-msgid "Detach canceled"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:150
-msgid "Details"
+#: includes/api/controllers/class-sp-rest-translation-controller.php:264
+msgid "API"
 msgstr ""
 
 #: includes/api/controllers/class-sp-rest-translation-controller.php:338
-msgid "Didn`t buy"
+msgid "Append"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:226
-msgid "Discard"
+#: includes/api/controllers/class-sp-rest-translation-controller.php:227
+msgid "Appended"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:225
-msgid "Discard changes"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:218
-msgid "Discount"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:167
-msgid "Discount tax"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:154
-msgid "Discount total"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:279
-msgid "Discounts"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:339
-msgid "Display"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:340
-msgid "Draft"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:202
-msgid "Draft set"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:304
-msgid "Drag and drop products from table or grid"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:341
-msgid "Drop attributes here"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:342
-msgid "Drop product here"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:345
-msgid "Duplicate category"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:346
-msgid "Duplicate customer"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:347
-msgid "Duplicate order"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:343
-msgid "Duplicate product"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:344
-msgid "Duplicate tag"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:116
-msgid "Edit original"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:348
-msgid "Edit sale"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:168
-msgid "Email address is required"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:241
-msgid "Enabled"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:141
-msgid "Failed"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:147
-msgid "Fees"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:230
-msgid "Fetching web store data..."
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:349
-msgid "Filter categories"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:350
-msgid "Filter search"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:102
-msgid "find your key"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:298
-msgid "for a low cost"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:351
-msgid "Gallery"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:257
-msgid "Get by period"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:258
-msgid "Get by range"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:352
-msgid "Global attribute editor"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:353
-msgid "Global attribute term editor"
+#: includes/api/controllers/class-sp-rest-translation-controller.php:337
+msgid "Archives"
 msgstr ""
 
 #: includes/api/controllers/class-sp-rest-translation-controller.php:152
+msgid "as default"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:115
+msgid "asc"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:332
+msgid "Attach"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:336
+msgid "Attach a new store"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:335
+msgid "Attach attribute"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:334
+msgid "Attach term"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:333
+msgid "Attached to post"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:331
+msgid "Attributes editor"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:93
+msgid "Author ID"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:86
+msgid "Authorize"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:318
+msgid "Automatic updates and reactivation on other machines has been blocked."
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:280
+msgid "Average sales"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:134
+msgid "Bank account number"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:339
+msgid "Barcode"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:126
+msgid "Barcode scanner"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:301
+msgid "Best sellers"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:169
+msgid "Billing"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:342
+msgid "Bought!"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:340
+msgid "Bulk edit"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:341
+msgid "Bullet list"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:343
+msgid "By"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:163
+msgid "Cancelled"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:92
+msgid "Caption"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:350
+#: includes/api/controllers/class-sp-rest-translation-controller.php:352
+msgid "Cart hash"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:178
+msgid "Cart tax"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:344
+msgid "Cash"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:345
+msgid "Cash out"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:107
+msgid "Category image"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:327
+msgid "Category slug"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:326
+msgid "Category title"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:289
+msgid "Charts grouped by"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:132
+msgid "City"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:243
+msgid "Clear Items"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:347
+msgid "Clear sale"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:198
+msgid "Code"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:98
+msgid "Comment status"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:190
+msgid "Company"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:129
+msgid "Company name"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:199
+msgid "Compound"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:83
+msgid "Could not connect, please verify url."
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:221
+msgid "Could not create order"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:133
+msgid "Country"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:204
+msgid "Coupon line"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:160
+msgid "Created"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:349
+msgid "Created via"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:276
+msgid "Currency"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:248
+msgid "Currency position"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:275
+msgid "Currency symbol"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:110
+msgid "current month"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:270
+msgid "Current version"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:109
+msgid "current week"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:111
+msgid "current year"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:113
+msgid "Custom fee"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:353
+msgid "Custom sorting"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:108
+msgid "Customer"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:172
+msgid "Customer ID"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:212
+msgid "Customer note"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:283
+msgid "Customer purchases"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:303
+msgid "Dashboard"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:294
+msgid "Day"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:355
+msgid "Deactivate"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:273
+msgid "Decimal separator"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:354
+msgid "Decrease"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:230
+msgid "Decreased"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:357
+msgid "Delete all permanently"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:356
+msgid "Delete product permanently"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:358
+msgid "Delete variation"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:186
+msgid "Delivery notice"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:214
+msgid "Delivery notice for order #"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:116
+msgid "desc"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:89
+msgid "Detach"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:238
+msgid "Detach canceled"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:171
+msgid "Details"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:359
+msgid "Didn`t buy"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:247
+msgid "Discard"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:246
+msgid "Discard changes"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:239
+msgid "Discount"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:188
+msgid "Discount tax"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:175
+msgid "Discount total"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:300
+msgid "Discounts"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:360
+msgid "Display"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:361
+msgid "Draft"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:223
+msgid "Draft set"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:325
+msgid "Drag and drop products from table or grid"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:362
+msgid "Drop attributes here"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:363
+msgid "Drop product here"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:366
+msgid "Duplicate category"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:367
+msgid "Duplicate customer"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:368
+msgid "Duplicate order"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:364
+msgid "Duplicate product"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:365
+msgid "Duplicate tag"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:137
+msgid "Edit original"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:369
+msgid "Edit sale"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:189
+msgid "Email address is required"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:262
+msgid "Enabled"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:162
+msgid "Failed"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:168
+msgid "Fees"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:251
+msgid "Fetching web store data..."
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:370
+msgid "Filter categories"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:371
+msgid "Filter search"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:123
+msgid "find your key"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:84
+msgid "for"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:319
+msgid "for a low cost"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:372
+msgid "Gallery"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:278
+msgid "Get by period"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:279
+msgid "Get by range"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:373
+msgid "Global attribute editor"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:374
+msgid "Global attribute term editor"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:173
 msgid "Guest"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:291
+#: includes/api/controllers/class-sp-rest-translation-controller.php:312
 msgid "Hide notice"
 msgstr ""
 
@@ -508,567 +544,607 @@ msgstr ""
 msgid "https://storepilot.com"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:223
+#: includes/api/controllers/class-sp-rest-translation-controller.php:244
 msgid "In stock"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:269
+#: includes/api/controllers/class-sp-rest-translation-controller.php:290
 msgid "Incoming"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:208
+#: includes/api/controllers/class-sp-rest-translation-controller.php:229
 msgid "Increased"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:237
+#: includes/api/controllers/class-sp-rest-translation-controller.php:258
 msgid "Install"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:292
+#: includes/api/controllers/class-sp-rest-translation-controller.php:313
 msgid "Install & Relaunch"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:354
+#: includes/api/controllers/class-sp-rest-translation-controller.php:375
 msgid "Install / Update"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:190
+#: includes/api/controllers/class-sp-rest-translation-controller.php:211
 msgid "Internal note"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:164
+#: includes/api/controllers/class-sp-rest-translation-controller.php:185
 msgid "Invoice"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:121
+#: includes/api/controllers/class-sp-rest-translation-controller.php:142
 msgid "Invoice bank account number"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:119
+#: includes/api/controllers/class-sp-rest-translation-controller.php:140
 msgid "Invoice city"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:127
+#: includes/api/controllers/class-sp-rest-translation-controller.php:148
 msgid "Invoice company name"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:120
+#: includes/api/controllers/class-sp-rest-translation-controller.php:141
 msgid "Invoice country"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:128
+#: includes/api/controllers/class-sp-rest-translation-controller.php:149
 msgid "Invoice email"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:195
+#: includes/api/controllers/class-sp-rest-translation-controller.php:216
 msgid "Invoice for order #"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:122
+#: includes/api/controllers/class-sp-rest-translation-controller.php:143
 msgid "Invoice logo"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:129
+#: includes/api/controllers/class-sp-rest-translation-controller.php:150
 msgid "Invoice phone"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:118
+#: includes/api/controllers/class-sp-rest-translation-controller.php:139
 msgid "Invoice postal code"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:107
+#: includes/api/controllers/class-sp-rest-translation-controller.php:128
 msgid "Invoice settings"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:355
+#: includes/api/controllers/class-sp-rest-translation-controller.php:376
 msgid "Label"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:236
+#: includes/api/controllers/class-sp-rest-translation-controller.php:257
 msgid "Language"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:327
+#: includes/api/controllers/class-sp-rest-translation-controller.php:348
 msgid "Last modified"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:91
+#: includes/api/controllers/class-sp-rest-translation-controller.php:112
 msgid "last month"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:248
+#: includes/api/controllers/class-sp-rest-translation-controller.php:269
 msgid "Latest version"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:294
+#: includes/api/controllers/class-sp-rest-translation-controller.php:315
 msgid "License expired!"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:399
+#: includes/api/controllers/class-sp-rest-translation-controller.php:420
 msgid "License for StorePilot"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:189
-msgid "Log"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:114
-msgid "Logo"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:123
-msgid "Manage subscriptions"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:356
-msgid "Menu order position"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:415
-msgid "Meta data"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:414
-msgid "Meta key"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:359
-msgid "Might be hidden for your customers"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:357
-msgid "Missing"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:271
-msgid "Month"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:260
-msgid "Net sales"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:360
-msgid "New"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:285
-msgid "No shops attached, please"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:240
-msgid "Not active"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:188
-msgid "Note from customer"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:149
-msgid "Notes"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:362
-msgid "Notify"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:361
-msgid "Number"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:251
-msgid "Number of decimals"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:140
-msgid "On hold"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:363
-msgid "Open"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:364
-msgid "Option"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:365
-msgid "Options"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:146
-msgid "Order status"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:197
-msgid "Order Total"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:86
-msgid "Order total"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:283
-msgid "Orders"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:275
-msgid "Orders placed"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:186
-msgid "Other fees"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:224
-msgid "Out of stock"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:246
-msgid "Outdated WooCommerce templates"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:330
-msgid "Paid on"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:162
-msgid "Parent ID"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:366
-msgid "Parent id is not 0"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:161
-msgid "Parent order ID"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:367
-msgid "Pay with card"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:159
-msgid "Payment method"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:160
-msgid "Payment method title"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:203
-msgid "Pending set"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:368
-msgid "Per page"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:370
-msgid "Per row"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:369
-msgid "Percentage"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:101
-msgid "Phone"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:295
-msgid "Please"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:242
-msgid "Please enable"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:371
-msgid "Please input"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:83
-msgid "Please select customer"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:85
-msgid "Please select media"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:166
-msgid "Please select order"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:84
-msgid "Please select product"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:235
-msgid "Plugins active"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:284
-msgid "Point of Sale"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:110
-msgid "Postal code"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:372
-msgid "Prepend"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:207
-msgid "Prepended"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:373
-msgid "Price & sale"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:374
-msgid "Private"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:204
-msgid "Private set"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:144
-msgid "Processing"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:276
-msgid "Products purchased"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:201
-msgid "Publish set"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:358
-msgid "Published products using term"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:115
-msgid "Purchase code"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:173
-msgid "Qty"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:281
-msgid "Quantity"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:375
-msgid "Rack"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:176
-msgid "Rate"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:175
-msgid "Rate code"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:181
-msgid "Reason"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:163
-msgid "Receipt"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:98
-msgid "Receipt for order"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:96
-msgid "Received"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:377
-msgid "Refresh"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:143
-msgid "Refunded"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:182
-msgid "Refunds"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:380
-msgid "Remove from category"
+#: includes/api/controllers/class-sp-rest-translation-controller.php:87
+msgid "Loading..."
 msgstr ""
 
 #: includes/api/controllers/class-sp-rest-translation-controller.php:210
-msgid "Removed"
+msgid "Log"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:381
-msgid "Rename"
+#: includes/api/controllers/class-sp-rest-translation-controller.php:135
+msgid "Logo"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:378
-msgid "renaming"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:379
-msgid "Replace"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:205
-msgid "Replaced"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:376
-msgid "Reset to 0"
+#: includes/api/controllers/class-sp-rest-translation-controller.php:144
+msgid "Manage subscriptions"
 msgstr ""
 
 #: includes/api/controllers/class-sp-rest-translation-controller.php:97
-msgid "Return"
+msgid "Media Manager"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:382
-msgid "Role"
+#: includes/api/controllers/class-sp-rest-translation-controller.php:100
+msgid "Media type"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:377
+msgid "Menu order position"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:436
+msgid "Meta data"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:435
+msgid "Meta key"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:380
+msgid "Might be hidden for your customers"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:101
+msgid "Mime type"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:378
+msgid "Missing"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:292
+msgid "Month"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:94
+msgid "month"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:281
+msgid "Net sales"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:381
+msgid "New"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:306
+msgid "No shops attached, please"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:261
+msgid "Not active"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:88
+msgid "Not found"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:209
+msgid "Note from customer"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:170
+msgid "Notes"
 msgstr ""
 
 #: includes/api/controllers/class-sp-rest-translation-controller.php:383
-msgid "Sale active"
+msgid "Notify"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:382
+msgid "Number"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:272
+msgid "Number of decimals"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:161
+msgid "On hold"
 msgstr ""
 
 #: includes/api/controllers/class-sp-rest-translation-controller.php:384
-msgid "Sale flash"
+msgid "Open"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:90
+msgid "Opens in default browser"
 msgstr ""
 
 #: includes/api/controllers/class-sp-rest-translation-controller.php:385
-msgid "Sale inactive"
+msgid "Option"
 msgstr ""
 
 #: includes/api/controllers/class-sp-rest-translation-controller.php:386
-msgid "Sale scheduled"
+msgid "Options"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:125
-msgid "Save / fetch"
+#: includes/api/controllers/class-sp-rest-translation-controller.php:167
+msgid "Order status"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:303
-msgid "Search by"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:302
-msgid "Search by SKU"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:301
-msgid "Search by Slug"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:300
-msgid "Search by Term"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:99
-msgid "Search for Customer"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:220
-msgid "Select Customer"
+#: includes/api/controllers/class-sp-rest-translation-controller.php:218
+msgid "Order Total"
 msgstr ""
 
 #: includes/api/controllers/class-sp-rest-translation-controller.php:106
-msgid "Select how StorePilot should calculate the taxes"
+msgid "Order total"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:389
-msgid "Select image"
+#: includes/api/controllers/class-sp-rest-translation-controller.php:304
+msgid "Orders"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:390
-msgid "Select images"
+#: includes/api/controllers/class-sp-rest-translation-controller.php:296
+msgid "Orders placed"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:103
-msgid "Select terminal"
+#: includes/api/controllers/class-sp-rest-translation-controller.php:207
+msgid "Other fees"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:388
-msgid "Select variation"
+#: includes/api/controllers/class-sp-rest-translation-controller.php:245
+msgid "Out of stock"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:267
+msgid "Outdated WooCommerce templates"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:351
+msgid "Paid on"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:183
+msgid "Parent ID"
 msgstr ""
 
 #: includes/api/controllers/class-sp-rest-translation-controller.php:387
-msgid "Selected"
+msgid "Parent id is not 0"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:138
-msgid "Set identical to your WooCommerce settings"
+#: includes/api/controllers/class-sp-rest-translation-controller.php:182
+msgid "Parent order ID"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:185
-msgid "Shipping ID"
+#: includes/api/controllers/class-sp-rest-translation-controller.php:388
+msgid "Pay with card"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:184
-msgid "Shipping lines"
+#: includes/api/controllers/class-sp-rest-translation-controller.php:180
+msgid "Payment method"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:156
-msgid "Shipping tax"
+#: includes/api/controllers/class-sp-rest-translation-controller.php:181
+msgid "Payment method title"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:155
-msgid "Shipping total"
+#: includes/api/controllers/class-sp-rest-translation-controller.php:224
+msgid "Pending set"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:215
-msgid "Shop is already attached"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:299
-msgid "Shops"
+#: includes/api/controllers/class-sp-rest-translation-controller.php:389
+msgid "Per page"
 msgstr ""
 
 #: includes/api/controllers/class-sp-rest-translation-controller.php:391
-msgid "Shortcut"
+msgid "Per row"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:390
+msgid "Percentage"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:122
+msgid "Phone"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:99
+msgid "Ping status"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:316
+msgid "Please"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:263
+msgid "Please enable"
 msgstr ""
 
 #: includes/api/controllers/class-sp-rest-translation-controller.php:392
-msgid "Shortcut: delete"
+msgid "Please input"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:287
-msgid "Sign up"
+#: includes/api/controllers/class-sp-rest-translation-controller.php:103
+msgid "Please select customer"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:216
-msgid "Site is removed"
+#: includes/api/controllers/class-sp-rest-translation-controller.php:105
+msgid "Please select media"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:393
-msgid "Start composing..."
+#: includes/api/controllers/class-sp-rest-translation-controller.php:187
+msgid "Please select order"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:172
-msgid "State"
-msgstr ""
-
-#: includes/api/controllers/class-sp-rest-translation-controller.php:117
-msgid "Store address"
+#: includes/api/controllers/class-sp-rest-translation-controller.php:104
+msgid "Please select product"
 msgstr ""
 
 #: includes/api/controllers/class-sp-rest-translation-controller.php:256
+msgid "Plugins active"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:305
+msgid "Point of Sale"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:131
+msgid "Postal code"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:393
+msgid "Prepend"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:228
+msgid "Prepended"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:394
+msgid "Price & sale"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:395
+msgid "Private"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:225
+msgid "Private set"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:165
+msgid "Processing"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:297
+msgid "Products purchased"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:222
+msgid "Publish set"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:379
+msgid "Published products using term"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:136
+msgid "Purchase code"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:194
+msgid "Qty"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:302
+msgid "Quantity"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:396
+msgid "Rack"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:197
+msgid "Rate"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:196
+msgid "Rate code"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:202
+msgid "Reason"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:184
+msgid "Receipt"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:119
+msgid "Receipt for order"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:117
+msgid "Received"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:398
+msgid "Refresh"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:164
+msgid "Refunded"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:203
+msgid "Refunds"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:401
+msgid "Remove from category"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:231
+msgid "Removed"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:402
+msgid "Rename"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:399
+msgid "renaming"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:400
+msgid "Replace"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:226
+msgid "Replaced"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:397
+msgid "Reset to 0"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:118
+msgid "Return"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:403
+msgid "Role"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:404
+msgid "Sale active"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:405
+msgid "Sale flash"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:406
+msgid "Sale inactive"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:407
+msgid "Sale scheduled"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:146
+msgid "Save / fetch"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:324
+msgid "Search by"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:323
+msgid "Search by SKU"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:322
+msgid "Search by Slug"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:321
+msgid "Search by Term"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:120
+msgid "Search for Customer"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:241
+msgid "Select Customer"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:127
+msgid "Select how StorePilot should calculate the taxes"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:410
+msgid "Select image"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:411
+msgid "Select images"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:124
+msgid "Select terminal"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:409
+msgid "Select variation"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:408
+msgid "Selected"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:159
+msgid "Set identical to your WooCommerce settings"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:206
+msgid "Shipping ID"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:205
+msgid "Shipping lines"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:177
+msgid "Shipping tax"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:176
+msgid "Shipping total"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:85
+msgid "Shop"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:236
+msgid "Shop is already attached"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:320
+msgid "Shops"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:412
+msgid "Shortcut"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:413
+msgid "Shortcut: delete"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:308
+msgid "Sign up"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:237
+msgid "Site is removed"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:102
+msgid "Sizes"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:414
+msgid "Start composing..."
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:193
+msgid "State"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:138
+msgid "Store address"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:277
 msgid "Store configuration"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:132
+#: includes/api/controllers/class-sp-rest-translation-controller.php:153
 msgid "Store Keeping Unit"
 msgstr ""
 
@@ -1084,7 +1160,7 @@ msgstr ""
 msgid "StorePilot can not load, ensure you have the latest version installed"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:238
+#: includes/api/controllers/class-sp-rest-translation-controller.php:259
 msgid "StorePilot Helper"
 msgstr ""
 
@@ -1094,268 +1170,276 @@ msgid ""
 "from the Desktop."
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:100
+#: includes/api/controllers/class-sp-rest-translation-controller.php:121
 msgid "Stripe secret key"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:192
+#: includes/api/controllers/class-sp-rest-translation-controller.php:213
 msgid "Subject"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:278
+#: includes/api/controllers/class-sp-rest-translation-controller.php:299
 msgid "Subtotal"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:234
+#: includes/api/controllers/class-sp-rest-translation-controller.php:255
 msgid "Supports Secure Socket Layer"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:212
+#: includes/api/controllers/class-sp-rest-translation-controller.php:233
 msgid "Tag Created"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:394
+#: includes/api/controllers/class-sp-rest-translation-controller.php:415
 msgid "Tag settings"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:396
+#: includes/api/controllers/class-sp-rest-translation-controller.php:417
 msgid "Tag slug"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:395
+#: includes/api/controllers/class-sp-rest-translation-controller.php:416
 msgid "Tag title"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:187
+#: includes/api/controllers/class-sp-rest-translation-controller.php:208
 msgid "Tax discount"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:130
+#: includes/api/controllers/class-sp-rest-translation-controller.php:151
 msgid "Tax in Point of Sale"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:158
+#: includes/api/controllers/class-sp-rest-translation-controller.php:179
 msgid "Tax included in prices?"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:398
+#: includes/api/controllers/class-sp-rest-translation-controller.php:419
 msgid "Tax is excluded from prices"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:397
+#: includes/api/controllers/class-sp-rest-translation-controller.php:418
 msgid "Tax is included in prices"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:174
+#: includes/api/controllers/class-sp-rest-translation-controller.php:195
 msgid "Tax lines"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:179
+#: includes/api/controllers/class-sp-rest-translation-controller.php:200
 msgid "Tax shipping"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:180
+#: includes/api/controllers/class-sp-rest-translation-controller.php:201
 msgid "Tax total"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:277
+#: includes/api/controllers/class-sp-rest-translation-controller.php:298
 msgid "Taxed"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:325
+#: includes/api/controllers/class-sp-rest-translation-controller.php:346
 msgid "Template"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:104
+#: includes/api/controllers/class-sp-rest-translation-controller.php:125
 msgid "Test terminal"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:250
+#: includes/api/controllers/class-sp-rest-translation-controller.php:271
 msgid "Theme"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:134
+#: includes/api/controllers/class-sp-rest-translation-controller.php:155
 msgid ""
 "There you can also detach licenses from machines, so it can be attached to "
 "other machines."
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:400
+#: includes/api/controllers/class-sp-rest-translation-controller.php:421
 msgid "This cannot be undone!"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:401
+#: includes/api/controllers/class-sp-rest-translation-controller.php:422
 msgid "This page"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:402
+#: includes/api/controllers/class-sp-rest-translation-controller.php:423
 msgid "This product is trashed!"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:253
+#: includes/api/controllers/class-sp-rest-translation-controller.php:274
 msgid "Thousand separator"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:126
+#: includes/api/controllers/class-sp-rest-translation-controller.php:147
 msgid "Tip"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:404
+#: includes/api/controllers/class-sp-rest-translation-controller.php:425
 msgid "Title & slug"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:405
+#: includes/api/controllers/class-sp-rest-translation-controller.php:426
 msgid "To"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:194
+#: includes/api/controllers/class-sp-rest-translation-controller.php:215
 msgid "To account number"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:289
+#: includes/api/controllers/class-sp-rest-translation-controller.php:310
 msgid "to keep using"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:133
+#: includes/api/controllers/class-sp-rest-translation-controller.php:154
 msgid "To manage your subscriptions, please visit"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:228
+#: includes/api/controllers/class-sp-rest-translation-controller.php:249
 msgid "to update"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:196
+#: includes/api/controllers/class-sp-rest-translation-controller.php:217
 msgid "To:"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:219
+#: includes/api/controllers/class-sp-rest-translation-controller.php:240
 msgid "Total (Inc.)"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:199
+#: includes/api/controllers/class-sp-rest-translation-controller.php:220
 msgid "Total Discount"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:267
+#: includes/api/controllers/class-sp-rest-translation-controller.php:288
 msgid "Total discounts"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:231
+#: includes/api/controllers/class-sp-rest-translation-controller.php:252
 msgid "Total items"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:263
+#: includes/api/controllers/class-sp-rest-translation-controller.php:284
 msgid "Total orders"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:266
+#: includes/api/controllers/class-sp-rest-translation-controller.php:287
 msgid "Total refunds"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:261
+#: includes/api/controllers/class-sp-rest-translation-controller.php:282
 msgid "Total sales"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:265
+#: includes/api/controllers/class-sp-rest-translation-controller.php:286
 msgid "Total shipping"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:198
+#: includes/api/controllers/class-sp-rest-translation-controller.php:219
 msgid "Total Tax"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:264
+#: includes/api/controllers/class-sp-rest-translation-controller.php:285
 msgid "Total tax"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:153
+#: includes/api/controllers/class-sp-rest-translation-controller.php:174
 msgid "Transaction ID"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:406
+#: includes/api/controllers/class-sp-rest-translation-controller.php:427
 msgid "Trash all"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:288
+#: includes/api/controllers/class-sp-rest-translation-controller.php:309
 msgid "Trial ends"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:136
+#: includes/api/controllers/class-sp-rest-translation-controller.php:157
 msgid "Type which meta tag the barcode scanner should search for"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:407
+#: includes/api/controllers/class-sp-rest-translation-controller.php:428
 msgid "Unselect all"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:296
+#: includes/api/controllers/class-sp-rest-translation-controller.php:317
 msgid "upgrade"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:408
+#: includes/api/controllers/class-sp-rest-translation-controller.php:429
 msgid "URL"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:135
+#: includes/api/controllers/class-sp-rest-translation-controller.php:156
 msgid "Uses the products"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:93
+#: includes/api/controllers/class-sp-rest-translation-controller.php:114
 msgid "Using"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:244
+#: includes/api/controllers/class-sp-rest-translation-controller.php:265
 msgid "Using StorePilot Pro edition?"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:409
+#: includes/api/controllers/class-sp-rest-translation-controller.php:430
 msgid "Value"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:410
+#: includes/api/controllers/class-sp-rest-translation-controller.php:431
 msgid "Variation"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:229
+#: includes/api/controllers/class-sp-rest-translation-controller.php:250
 msgid "View reports for"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:411
+#: includes/api/controllers/class-sp-rest-translation-controller.php:432
 msgid "Visible"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:412
+#: includes/api/controllers/class-sp-rest-translation-controller.php:433
 msgid "Waiting for payment..."
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:245
+#: includes/api/controllers/class-sp-rest-translation-controller.php:266
 msgid "Webshop status"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:272
+#: includes/api/controllers/class-sp-rest-translation-controller.php:293
 msgid "Week"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:247
+#: includes/api/controllers/class-sp-rest-translation-controller.php:96
+msgid "week"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:268
 msgid "WooCommerce actively supported"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:232
+#: includes/api/controllers/class-sp-rest-translation-controller.php:253
 msgid "WordPress Dashboard"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:270
+#: includes/api/controllers/class-sp-rest-translation-controller.php:291
 msgid "Year"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:413
+#: includes/api/controllers/class-sp-rest-translation-controller.php:95
+msgid "year"
+msgstr ""
+
+#: includes/api/controllers/class-sp-rest-translation-controller.php:434
 msgid "You are authorized"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:137
+#: includes/api/controllers/class-sp-rest-translation-controller.php:158
 msgid "You can also type 'product_id' to use the product id's"
 msgstr ""
 
-#: includes/api/controllers/class-sp-rest-translation-controller.php:211
+#: includes/api/controllers/class-sp-rest-translation-controller.php:232
 msgid "Your browser doesnt support this type of copy"
 msgstr ""

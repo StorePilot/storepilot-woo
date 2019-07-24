@@ -80,6 +80,10 @@ class SP_REST_Translation_Controller {
     return wp_send_json([
 
       // @todo - Needs review  - some could be replaced by woo
+      [ key => "Could not connect, please verify url.", value => __("Could not connect, please verify url.", "storepilot") ],
+      [ key => "for", value => __("for", "storepilot") ],
+      [ key => "Shop", value => __("Shop", "storepilot") ],
+      [ key => "Authorize", value => __("Authorize", "storepilot") ],
       [ key => "Loading...", value => __("Loading...", "storepilot") ],
       [ key => "Not found", value => __("Not found", "storepilot") ],
       [ key => "Detach", value => __("Detach", "storepilot") ],
@@ -453,8 +457,6 @@ class SP_REST_Translation_Controller {
       [ key => "Allow", value => __("Allow", "woocommerce") ],
       [ key => "Allow backorders?", value => __("Allow backorders?", "woocommerce") ],
       [ key => "Allow, but notify customer", value => __("Allow, but notify customer", "woocommerce") ],
-      [ key => "Authorize", value => __("Authorize", "woocommerce") ],
-      [ key => "Shop", value => __("Shop", "woocommerce") ],
       [ key => "Apply", value => __("Apply", "woocommerce") ],
       [ key => "Both", value => __("Both", "woocommerce") ],
       [ key => "Cancel", value => __("Cancel", "woocommerce") ],
