@@ -9,6 +9,7 @@
  * Tested up to: 5.1
  *
  * Text Domain: storepilot
+ * Domain Path: /languages
  *
  * Copyright: © 2018 StorePilot AS
  * License: GPLv3

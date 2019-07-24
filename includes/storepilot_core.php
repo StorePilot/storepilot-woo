@@ -82,6 +82,7 @@ if (!class_exists('StorePilotCore')) :
     private function init_hooks()
     {
       register_activation_hook(__FILE__, array('SP_Install', 'install'));
+      add_action('plugins_loaded', array($this, 'load_textdomain'));
       add_action('rest_api_init', array($this, 'add_additional_rest_fields'));
       add_filter('woocommerce_loaded', array($this, 'extend_rest_api'));
       add_filter('woocommerce_sale_flash', array($this, 'sale_flash'));
@@ -122,6 +123,11 @@ if (!class_exists('StorePilotCore')) :
       include_once(plugin_dir_path(__FILE__) . 'api/rest-api-extension.php');
       include_once(plugin_dir_path(__FILE__) . 'api/rest-filter.php');
       $this->api = new SP_API();
+    }
+
+    function load_textdomain() {
+      $domain = 'storepilot';
+      load_plugin_textdomain( $domain, false, dirname( plugin_basename( __FILE__ ) ) . '/../languages/' );
     }
 
     public function sale_flash($content)
