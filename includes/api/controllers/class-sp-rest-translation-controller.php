@@ -81,6 +81,7 @@ class SP_REST_Translation_Controller {
 
       // @todo - Needs review  - some could be replaced by woo
       [ key => "Could not connect, please verify url.", value => __("Could not connect, please verify url.", "storepilot") ],
+      [ key => "Edit variations", value => __("Edit variations", "storepilot") ],
       [ key => "for", value => __("for", "storepilot") ],
       [ key => "Shop", value => __("Shop", "storepilot") ],
       [ key => "Authorize", value => __("Authorize", "storepilot") ],
@@ -104,7 +105,6 @@ class SP_REST_Translation_Controller {
       [ key => "Please select product", value => __("Please select product", "storepilot") ],
       [ key => "Please select media", value => __("Please select media", "storepilot") ],
       [ key => "Order total", value => __("Order total", "storepilot") ],
-      [ key => "Category image", value => __("Category image", "storepilot") ],
       [ key => "Customer", value => __("Customer", "storepilot") ],
       [ key => "current week", value => __("current week", "storepilot") ],
       [ key => "current month", value => __("current month", "storepilot") ],
@@ -325,7 +325,8 @@ class SP_REST_Translation_Controller {
       [ key => "Drag and drop products from table or grid", value => __("Drag and drop products from table or grid", "storepilot") ],
       [ key => "Category title", value => __("Category title", "storepilot") ],
       [ key => "Category slug", value => __("Category slug", "storepilot") ],
-
+      [ key => "Category image", value => __("Category image", "storepilot") ],
+      
       // StorePilot only @todo - check if some fit with WordPress translation
       [ key => "Additional", value => __("Additional", "storepilot") ],
       [ key => "Attributes editor", value => __("Attributes editor", "storepilot") ],
@@ -462,7 +463,6 @@ class SP_REST_Translation_Controller {
       [ key => "Cancel", value => __("Cancel", "woocommerce") ],
       [ key => "Category", value => __("Category", "woocommerce") ],
       [ key => "Category settings", value => __("Category settings", "woocommerce") ],
-      [ key => "Category image", value => __("Category image", "woocommerce") ],
       [ key => "Categories", value => __("Categories", "woocommerce") ],
       [ key => "Clear", value => __("Clear", "woocommerce") ],
       [ key => "Close", value => __("Close", "woocommerce") ],
