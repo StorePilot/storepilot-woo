@@ -125,9 +125,14 @@ if (!class_exists('StorePilotCore')) :
       $this->api = new SP_API();
     }
 
+    public function add_settings_pages() {
+      require_once( __DIR__ . '/settings.php' );
+    }
+
     function load_textdomain() {
       $domain = 'storepilot';
       load_plugin_textdomain( $domain, false, dirname( plugin_basename( __FILE__ ) ) . '/../languages/' );
+      $this->add_settings_pages();
     }
 
     public function sale_flash($content)
