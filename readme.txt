@@ -64,6 +64,22 @@ we believe this will simplify your daily work.
 
 == Changelog ==
 
+= 1.1.7 =
+
+* Added rest api includes function
+
+= 1.1.5 - 1.1.6 =
+
+* Changed hook for rest api extension
+
+= 1.1.4 =
+
+* Added missing files
+
+= 1.1.3 =
+
+* Added capabilities management
+
 = 1.1.2 =
 
 * Made translation ready for coming release

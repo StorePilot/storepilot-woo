@@ -120,6 +120,7 @@ if (!class_exists('StorePilotCore')) :
       /**
        * Rest Api Extensions
        */
+      WC()->api->rest_api_includes();
       include_once(plugin_dir_path(__FILE__) . 'api/rest-api-extension.php');
       include_once(plugin_dir_path(__FILE__) . 'api/rest-filter.php');
       $this->api = new SP_API();
