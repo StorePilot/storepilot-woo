@@ -64,7 +64,7 @@ we believe this will simplify your daily work.
 
 == Changelog ==
 
-= 1.1.8 =
+= 1.1.8 - 1.2.0 =
 
 * Fixed bug with capabilities
 

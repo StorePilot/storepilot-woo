@@ -30,6 +30,16 @@ function storepilot_controller() {
       'machines' => []
     ];
   }
+  if (!$capabilities['default']) {
+    $capabilities['default'] = [
+      'dashboard' => true,
+      'products' => true,
+      'customers' => true,
+      'orders' => true,
+      'pos' => true,
+      'settings' => true
+    ];
+  }
 
   if (isset($_POST['updates'])) {
     $updates = str_replace('\\', '', $_POST['updates']);
@@ -95,7 +105,12 @@ function storepilot_controller() {
       </thead>
 
       <tbody>
-      <?php foreach($capabilities['machines'] as $key => $val) { ?>
+      <?php
+		foreach($capabilities['machines'] as $key => $val) {
+			if (!$capabilities['machines'][$key]['capabilities']) {
+				$capabilities['machines'][$key]['capabilities'] = $capabilities['default'];
+			}
+	  ?>
       <?php if ($key === 'Default') { ?>
         <tr>
           <td>
