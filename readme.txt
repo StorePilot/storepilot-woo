@@ -64,6 +64,10 @@ we believe this will simplify your daily work.
 
 == Changelog ==
 
+= 1.1.8 =
+
+* Fixed bug with capabilities
+
 = 1.1.7 =
 
 * Added rest api includes function

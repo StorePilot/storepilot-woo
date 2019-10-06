@@ -17,6 +17,19 @@ function storepilot_menu() {
 function storepilot_controller() {
 
   $capabilities = json_decode(get_option('storepilot_capabilities'), true);
+  if (!$capabilities) {
+    $capabilities = [
+      'default' => [
+        'dashboard' => true,
+        'products' => true,
+        'customers' => true,
+        'orders' => true,
+        'pos' => true,
+        'settings' => true
+      ],
+      'machines' => []
+    ];
+  }
 
   if (isset($_POST['updates'])) {
     $updates = str_replace('\\', '', $_POST['updates']);
