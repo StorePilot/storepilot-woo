@@ -73,9 +73,24 @@ class SP_REST_Sync_Controller {
     $machine = $q['machine'];
     $fingerprint = $q['fingerprint'];
 
-		if ($action === 'capabilities') {
-			return $this->capabilities($content, $machine, $fingerprint);
-		}
+    if ($action === 'capabilities') {
+      return $this->capabilities($content, $machine, $fingerprint);
+    }
+    if ($action === 'devices') {
+      return $this->devices($content, $machine, $fingerprint);
+    }
+    if ($action === 'push_process') {
+      return $this->push_process(json_decode($content, true), $machine, $fingerprint);
+    }
+    if ($action === 'read_process') {
+      return $this->read_process(json_decode($content, true), $machine, $fingerprint);
+    }
+    if ($action === 'update_process') {
+      return $this->update_process(json_decode($content, true), $machine, $fingerprint);
+    }
+    if ($action === 'remove_process') {
+      return $this->remove_process(json_decode($content, true), $machine, $fingerprint);
+    }
 
   }
 
@@ -90,80 +105,169 @@ class SP_REST_Sync_Controller {
   public function get_ordering_collection_params() {
     $params['status']['default'] = 'inherit';
     $params['status']['items']['enum'] = array( 'inherit', 'private', 'trash' );
-
     $params['action'] = array(
       'default'           => null,
       'description'       => __( 'Type of function to execute' ),
       'type'              => 'string'
     );
-
     $params['fingerprint'] = array(
       'default'           => null,
       'description'       => __( 'Machine UUID' ),
       'type'              => 'string'
     );
-
     $params['machine'] = array(
       'default'           => null,
       'description'       => __( 'Machine name' ),
       'type'              => 'string'
     );
-
     $params['content'] = array(
       'default'           => null,
       'description'       => __( 'Data to process' ),
       'type'              => 'string'
     );
-
     return $params;
   }
 
-	public static function capabilities($content, $machine, $fingerprint) {
-    
+  public static function capabilities($content, $machine, $fingerprint)
+  {
     $capabilities = json_decode(get_option('storepilot_capabilities'), true);
-    if (!$capabilities) {
-      $capabilities = [
-        'default' => [
-          'dashboard' => true,
-          'products' => true,
-          'customers' => true,
-          'orders' => true,
-          'pos' => true,
-          'settings' => true
-        ],
-        'machines' => []
-      ];
-    }
+    if (!$capabilities) $capabilities = SP_REST_Sync_Controller::create_capabilities();
     // Convert default to valid true / false
-    foreach($capabilities['default'] as $key => $val) {
-      if ($val === 'true') {
-        $capabilities['default'][$key] = true;
-      } else if ($val === 'false') {
-        $capabilities['default'][$key] = false;
-      }
+    foreach ($capabilities['default'] as $key => $val) {
+      if ($val === 'true') $capabilities['default'][$key] = true;
+      else if ($val === 'false') $capabilities['default'][$key] = false;
     }
     if ($fingerprint) {
-      $t = [];
       // Convert machine to valid true / false
-      foreach($capabilities['machines'][$fingerprint]['capabilities'] as $key => $val) {
-        if ($val === 'true') {
-          $capabilities['machines'][$fingerprint]['capabilities'][$key] = true;
-        } else if ($val === 'false') {
-          $capabilities['machines'][$fingerprint]['capabilities'][$key] = false;
-        }
-      }
       if (!$capabilities['machines'][$fingerprint]) {
         $capabilities['machines'][$fingerprint] = [
-          'capabilities' => $capabilities['default']
+          'capabilities' => $capabilities['default'],
+          'processes' => [],
+          'machine' => $machine
         ];
+      }
+      foreach ($capabilities['machines'][$fingerprint]['capabilities'] as $key => $val) {
+        if ($val === 'true') $capabilities['machines'][$fingerprint]['capabilities'][$key] = true;
+        else if ($val === 'false') $capabilities['machines'][$fingerprint]['capabilities'][$key] = false;
       }
       $capabilities['machines'][$fingerprint]['machine'] = $machine;
       update_option('storepilot_capabilities', json_encode($capabilities));
-      wp_send_json( $capabilities['machines'][$fingerprint] );
+      wp_send_json($capabilities['machines'][$fingerprint]);
     } else {
       update_option('storepilot_capabilities', json_encode($capabilities));
-      wp_send_json( $capabilities['default'] );
+      wp_send_json($capabilities['default']);
     }
-	}
+  }
+
+  public static function devices($content, $machine, $fingerprint)
+  {
+    $capabilities = json_decode(get_option('storepilot_capabilities'), true);
+    if (!$capabilities) {
+      $capabilities = SP_REST_Sync_Controller::create_capabilities();
+    }
+    if ($fingerprint) {
+      wp_send_json($capabilities['machines']);
+    } else {
+      wp_send_json([]);
+    }
+  }
+
+  public static function push_process($content, $machine, $fingerprint)
+  {
+    $capabilities = json_decode(get_option('storepilot_capabilities'), true);
+    if (!$capabilities) $capabilities = SP_REST_Sync_Controller::create_capabilities();
+    if ($fingerprint) {
+      foreach($capabilities['machines'] as $key => $machine) {
+        if ($content['fingerprint'] && $key === $content['fingerprint']) {
+          if (!$capabilities['machines'][$key]['processes'])
+            $capabilities['machines'][$key]['processes'] = [];
+          $capabilities['machines'][$key]['processes'][] = $content;
+          update_option('storepilot_capabilities', json_encode($capabilities));
+          wp_send_json($capabilities['machines'][$key]['processes']);
+        }
+      }
+    }
+    wp_send_json([]);
+  }
+
+  public static function read_process($content, $machine, $fingerprint)
+  {
+    $capabilities = json_decode(get_option('storepilot_capabilities'), true);
+    if (!$capabilities) $capabilities = SP_REST_Sync_Controller::create_capabilities();
+    if ($fingerprint) {
+      foreach ($capabilities['machines'] as $key => $machine) {
+        if ($content['fingerprint'] && $key === $content['fingerprint']) {
+          if (!$content['process_id']) wp_send_json($capabilities['machines'][$key]['processes']);
+          else
+          foreach($capabilities['machines'][$key]['processes'] as $process) {
+            if ($process['process_id'] === $content['process_id']) {
+              wp_send_json($capabilities['machines'][$key]['processes']);
+            }
+          }
+        }
+      }
+    }
+    wp_send_json([]);
+  }
+
+  public static function update_process($content, $machine, $fingerprint)
+  {
+    $capabilities = json_decode(get_option('storepilot_capabilities'), true);
+    if (!$capabilities) $capabilities = SP_REST_Sync_Controller::create_capabilities();
+    if ($fingerprint) {
+      foreach ($capabilities['machines'] as $key => $machine) {
+        if ($content['fingerprint'] && $key === $content['fingerprint']) {
+          $processes = [];
+          foreach ($capabilities['machines'][$key]['processes'] as $process) {
+            if ($process['process_id'] === $content['process_id']) {
+              $processes[] = $content;
+            } else {
+              $processes[] = $process;
+            }
+          }
+          $capabilities['machines'][$key]['processes'] = $processes;
+          update_option('storepilot_capabilities', json_encode($capabilities));
+          wp_send_json($capabilities['machines'][$key]['processes']);
+        }
+      }
+    }
+    wp_send_json([]);
+  }
+
+  public static function remove_process($content, $machine, $fingerprint)
+  {
+    $capabilities = json_decode(get_option('storepilot_capabilities'), true);
+    if (!$capabilities) $capabilities = SP_REST_Sync_Controller::create_capabilities();
+    if ($fingerprint) {
+      foreach ($capabilities['machines'] as $key => $machine) {
+        if ($content['fingerprint'] && $key === $content['fingerprint']) {
+          $processes = [];
+          foreach ($capabilities['machines'][$key]['processes'] as $process) {
+            if ($process['process_id'] !== $content['process_id']) {
+              $processes[] = $process;
+            }
+          }
+          $capabilities['machines'][$key]['processes'] = $processes;
+          update_option('storepilot_capabilities', json_encode($capabilities));
+          wp_send_json($capabilities['machines'][$key]['processes']);
+        }
+      }
+    }
+    wp_send_json([]);
+  }
+
+  public static function create_capabilities() {
+    return [
+      'default' => [
+        'dashboard' => true,
+        'products' => true,
+        'customers' => true,
+        'orders' => true,
+        'pos' => true,
+        'settings' => true
+      ],
+      'machines' => []
+    ];
+  }
 
 }
