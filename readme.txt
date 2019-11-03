@@ -67,6 +67,9 @@ we believe this will simplify your daily work.
 = 1.2.1 =
 
 * Added processing endpoints
+* Made ready for vipps support
+* Made ready for paypal here support
+* Made ready for sumup support
 
 = 1.1.8 - 1.2.0 =
 

@@ -105,7 +105,14 @@ if (!class_exists('StorePilotCore')) :
         'storepilot_invoice_logo',
         'storepilot_stripe_secret',
         'storepilot_barcode_meta',
-        'storepilot_tax_state'
+        'storepilot_tax_state',
+        'storepilot_sumup_affiliate_key',
+        'storepilot_paypal_here_client_id',
+        'storepilot_paypal_here_client_secret',
+        'storepilot_vipps_merchant_id',
+        'storepilot_vipps_client_id',
+        'storepilot_vipps_client_secret',
+        'storepilot_vipps_subscription_key'
       ];
       foreach($settings as $setting) {
         register_setting( 'general', $setting, array(
