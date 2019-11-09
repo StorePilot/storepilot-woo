@@ -204,7 +204,7 @@ class SP_REST_Sync_Controller {
           else
           foreach($capabilities['machines'][$key]['processes'] as $process) {
             if ($process['process_id'] === $content['process_id']) {
-              wp_send_json($capabilities['machines'][$key]['processes']);
+              wp_send_json($process);
             }
           }
         }

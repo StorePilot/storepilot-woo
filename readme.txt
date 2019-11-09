@@ -64,6 +64,10 @@ we believe this will simplify your daily work.
 
 == Changelog ==
 
+= 1.2.3 =
+
+* Fixed response of single process
+
 = 1.2.2 =
 
 * Added platform information
