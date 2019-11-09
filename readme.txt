@@ -64,6 +64,10 @@ we believe this will simplify your daily work.
 
 == Changelog ==
 
+= 1.2.2 =
+
+* Added platform information
+
 = 1.2.1 =
 
 * Added processing endpoints

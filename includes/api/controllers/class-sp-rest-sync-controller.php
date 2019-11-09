@@ -71,25 +71,26 @@ class SP_REST_Sync_Controller {
     $action = $q['action'];
     $content = $q['content'];
     $machine = $q['machine'];
+    $platform = $q['platform'];
     $fingerprint = $q['fingerprint'];
 
     if ($action === 'capabilities') {
-      return $this->capabilities($content, $machine, $fingerprint);
+      return $this->capabilities($machine, $fingerprint, $platform);
     }
     if ($action === 'devices') {
-      return $this->devices($content, $machine, $fingerprint);
+      return $this->devices($fingerprint);
     }
     if ($action === 'push_process') {
-      return $this->push_process(json_decode($content, true), $machine, $fingerprint);
+      return $this->push_process(json_decode($content, true), $fingerprint);
     }
     if ($action === 'read_process') {
-      return $this->read_process(json_decode($content, true), $machine, $fingerprint);
+      return $this->read_process(json_decode($content, true), $fingerprint);
     }
     if ($action === 'update_process') {
-      return $this->update_process(json_decode($content, true), $machine, $fingerprint);
+      return $this->update_process(json_decode($content, true), $fingerprint);
     }
     if ($action === 'remove_process') {
-      return $this->remove_process(json_decode($content, true), $machine, $fingerprint);
+      return $this->remove_process(json_decode($content, true), $fingerprint);
     }
 
   }
@@ -128,7 +129,7 @@ class SP_REST_Sync_Controller {
     return $params;
   }
 
-  public static function capabilities($content, $machine, $fingerprint)
+  public static function capabilities($machine, $fingerprint, $platform)
   {
     $capabilities = json_decode(get_option('storepilot_capabilities'), true);
     if (!$capabilities) $capabilities = SP_REST_Sync_Controller::create_capabilities();
@@ -143,7 +144,8 @@ class SP_REST_Sync_Controller {
         $capabilities['machines'][$fingerprint] = [
           'capabilities' => $capabilities['default'],
           'processes' => [],
-          'machine' => $machine
+          'machine' => $machine,
+          'platform' => $platform
         ];
       }
       foreach ($capabilities['machines'][$fingerprint]['capabilities'] as $key => $val) {
@@ -151,6 +153,7 @@ class SP_REST_Sync_Controller {
         else if ($val === 'false') $capabilities['machines'][$fingerprint]['capabilities'][$key] = false;
       }
       $capabilities['machines'][$fingerprint]['machine'] = $machine;
+      $capabilities['machines'][$fingerprint]['platform'] = $platform;
       update_option('storepilot_capabilities', json_encode($capabilities));
       wp_send_json($capabilities['machines'][$fingerprint]);
     } else {
@@ -159,7 +162,7 @@ class SP_REST_Sync_Controller {
     }
   }
 
-  public static function devices($content, $machine, $fingerprint)
+  public static function devices($fingerprint)
   {
     $capabilities = json_decode(get_option('storepilot_capabilities'), true);
     if (!$capabilities) {
@@ -172,7 +175,7 @@ class SP_REST_Sync_Controller {
     }
   }
 
-  public static function push_process($content, $machine, $fingerprint)
+  public static function push_process($content, $fingerprint)
   {
     $capabilities = json_decode(get_option('storepilot_capabilities'), true);
     if (!$capabilities) $capabilities = SP_REST_Sync_Controller::create_capabilities();
@@ -190,7 +193,7 @@ class SP_REST_Sync_Controller {
     wp_send_json([]);
   }
 
-  public static function read_process($content, $machine, $fingerprint)
+  public static function read_process($content, $fingerprint)
   {
     $capabilities = json_decode(get_option('storepilot_capabilities'), true);
     if (!$capabilities) $capabilities = SP_REST_Sync_Controller::create_capabilities();
@@ -210,7 +213,7 @@ class SP_REST_Sync_Controller {
     wp_send_json([]);
   }
 
-  public static function update_process($content, $machine, $fingerprint)
+  public static function update_process($content, $fingerprint)
   {
     $capabilities = json_decode(get_option('storepilot_capabilities'), true);
     if (!$capabilities) $capabilities = SP_REST_Sync_Controller::create_capabilities();
@@ -234,7 +237,7 @@ class SP_REST_Sync_Controller {
     wp_send_json([]);
   }
 
-  public static function remove_process($content, $machine, $fingerprint)
+  public static function remove_process($content, $fingerprint)
   {
     $capabilities = json_decode(get_option('storepilot_capabilities'), true);
     if (!$capabilities) $capabilities = SP_REST_Sync_Controller::create_capabilities();

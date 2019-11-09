@@ -114,7 +114,7 @@ function storepilot_controller() {
       <?php if ($key === 'Default') { ?>
         <tr>
           <td>
-            <span><?php echo $val['machine']; ?></span>
+            <span><?php echo $val['machine'] . (isset($val['platform']) ? ' (' . $val['platform'] . ')' : ''); ?></span>
           </td>
           <td>
             <?php if ($key !== 'Default') { ?>
@@ -183,7 +183,7 @@ function storepilot_controller() {
       <?php if ($key !== 'Default') { ?>
         <tr>
           <td>
-            <span><?php echo $val['machine']; ?></span>
+            <span><?php echo $val['machine'] . (isset($val['platform']) ? ' (' . $val['platform'] . ')' : ''); ?></span>
           </td>
           <td>
             <?php if ($key !== 'Default') { ?>
