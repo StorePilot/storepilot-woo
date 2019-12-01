@@ -64,6 +64,10 @@ we believe this will simplify your daily work.
 
 == Changelog ==
 
+= 1.2.5 =
+
+* Added missing file
+
 = 1.2.4 =
 
 * Added barcode field

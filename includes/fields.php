@@ -94,8 +94,7 @@ function update_rack($value, $post, $key)
   $obj = json_decode($post, true);
   $post_id = update_post_meta($obj['id'], $key, $value);
   if (false === $post_id) {
-    return new WP_Error(9788251919579
-    
+    return new WP_Error(
       'rest_product_rack_failed',
       __('Failed to update product rack.'),
       array('status' => 500)
