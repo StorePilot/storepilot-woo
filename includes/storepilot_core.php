@@ -134,7 +134,8 @@ if (!class_exists('StorePilotCore')) :
     }
 
     public function add_settings_pages() {
-      require_once( __DIR__ . '/settings.php' );
+      require_once(__DIR__ . '/settings.php');
+      require_once(__DIR__ . '/fields.php');
     }
 
     function load_textdomain() {

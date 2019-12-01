@@ -64,6 +64,11 @@ we believe this will simplify your daily work.
 
 == Changelog ==
 
+= 1.2.4 =
+
+* Added barcode field
+* Added rack field
+
 = 1.2.3 =
 
 * Fixed response of single process
