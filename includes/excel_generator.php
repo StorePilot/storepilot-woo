@@ -11,10 +11,6 @@ use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
 function export_excel($type, $filter) {
 
-  try {
-    $filter = json_decode($filter, true);
-  } catch(Exception $e) {}
-
   $cnt = 0;
 
   $spreadsheet = new Spreadsheet();
@@ -46,10 +42,64 @@ function export_excel($type, $filter) {
 
     $sheet->setAutoFilter($sheet->calculateWorksheetDimension());
 
-    $query = new WP_Query([
+
+    /*
+    limit: -1,
+    sort: this.sort, // asc, desc
+    search_value: this.searchFilter, // Typed in string
+    search_by: this.searchByValue, // term (search), slug, sku, id (include)
+    orderby: this.orderByValue, // menu_order title, title, date, id, slug
+    category: cat, // id or null
+    tag: tag // id or null
+    */
+
+    try {
+      $filter = json_decode($filter, true);
+    } catch (Exception $e) {
+    }
+    $args = [
+      'order' => isset($filter['sort']) ? $filter['sort'] : 'asc',
       'post_type' => 'product',
       'posts_per_page' => isset($filter['limit']) ? $filter['limit'] : 100
-    ]);
+    ];
+    if (isset($filter['search_by']) && $filter['search_by'] === 'slug') {
+      if (isset($filter['search_value'])) {
+        $args['name'] = $filter['search_value'];
+      }
+    } else if (isset($filter['search_by']) && $filter['search_by'] === 'sku') {
+      if (isset($filter['search_value'])) {
+        $args['meta_key'] = '_sku';
+        $args['meta_value'] = $filter['search_value'];
+      }
+    } else if (isset($filter['search_by']) && $filter['search_by'] === 'id') {
+      if (isset($filter['search_value'])) $args['post__in'] = [$filter['search_value']];
+    } else {
+      $args['s'] = isset($filter['search_value']) ? $filter['search_value'] : '';
+    }
+    if (isset($filter['orderby'])) {
+      $args['orderby'] = $filter['orderby'];
+    }
+    $tax_query = [];
+    if (isset($filter['category']) && $filter['category']) {
+      $tax_query[] = [
+        'taxonomy' => 'product_cat',
+        'field' => 'term_id',
+        'terms' => $filter['category'],
+        'operator' => 'IN'
+      ];
+    }
+    if (isset($filter['tag']) && $filter['tag']) {
+      $tax_query[] = [
+        'taxonomy' => 'product_tag',
+        'field' => 'term_id',
+        'terms' => $filter['tag'],
+        'operator' => 'IN'
+      ];
+    }
+    if (count($tax_query) > 0) {
+      $args['tax_query'] = $tax_query;
+    }
+    $query = new WP_Query($args);
     $posts = $query->posts;
 
     $i = 2;
