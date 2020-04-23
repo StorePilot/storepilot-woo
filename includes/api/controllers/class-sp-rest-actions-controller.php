@@ -12,6 +12,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+include_once(__DIR__ . '/../../excel_generator.php');
+
 /**
  * Action controller used for custom actions via the REST API.
  *
@@ -39,7 +41,19 @@ class SP_REST_Actions_Controller {
           'permission_callback' => array( $this, 'update_product_permissions_check' ),
           'args'                => $this->get_ordering_collection_params()
         ))
-    );
+		);
+		register_rest_route(
+			$this->namespace,
+			'/actions/export',
+			array(
+				array(
+					'methods'             => WP_REST_Server::CREATABLE,
+					'callback'            => array($this, 'export'),
+					'permission_callback' => array($this, 'update_product_permissions_check'),
+					'args'                => $this->get_export_params()
+				)
+			)
+		);
 	}
 
 	/**
@@ -63,74 +77,127 @@ class SP_REST_Actions_Controller {
 		return true;
 	}
 
-  /**
-   * Retrieves a collection of posts.
-   *
-   * @since 1.0.0
-   * @access public
-   *
-   * @param WP_REST_Request $request Full details about the request.
-   * @return WP_REST_Response|WP_Error Response object on success, or WP_Error object on failure.
-   */
-  public function update_order( $request ) {
+	/**
+	 * Retrieves a collection of posts.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 *
+	 * @param WP_REST_Request $request Full details about the request.
+	 * @return WP_REST_Response|WP_Error Response object on success, or WP_Error object on failure.
+	 */
+	public function update_order($request)
+	{
 
-    $q = $request->get_query_params();
-    $id = $q['product_id'];
-    $pre_id = $q['pre_id'];
-    $next_id = $q['next_id'];
+		$q = $request->get_query_params();
+		$id = $q['product_id'];
+		$pre_id = $q['pre_id'];
+		$next_id = $q['next_id'];
 
-    // Ensure a search string is set in case the orderby is set to 'relevance'.
-    if ( empty( $id ) ) {
-      return new WP_Error( 'rest_missing_product_id', __( 'You need to define a product_id to be sorted.' ), array( 'status' => 400 ) );
-    }
+		// Ensure a search string is set in case the orderby is set to 'relevance'.
+		if (empty($id)) {
+			return new WP_Error('rest_missing_product_id', __('You need to define a product_id to be sorted.'), array('status' => 400));
+		}
 
-    // Ensure a search string is set in case the orderby is set to 'relevance'.
-    if ( empty( $pre_id ) ) {
-      return new WP_Error( 'rest_missing_prev_id', __( 'You need to define a product_id above product to be sorted.' ), array( 'status' => 400 ) );
-    }
+		// Ensure a search string is set in case the orderby is set to 'relevance'.
+		if (empty($pre_id)) {
+			return new WP_Error('rest_missing_prev_id', __('You need to define a product_id above product to be sorted.'), array('status' => 400));
+		}
 
-    // Ensure a search string is set in case the orderby is set to 'relevance'.
-    if ( empty( $next_id ) ) {
-      return new WP_Error( 'rest_missing_next_id', __( 'You need to define a product_id below product to be sorted.' ), array( 'status' => 400 ) );
-    }
+		// Ensure a search string is set in case the orderby is set to 'relevance'.
+		if (empty($next_id)) {
+			return new WP_Error('rest_missing_next_id', __('You need to define a product_id below product to be sorted.'), array('status' => 400));
+		}
 
-    $response = $this->custom_order_product($id, $pre_id, $next_id);
+		$response = $this->custom_order_product($id, $pre_id, $next_id);
 
-    return $response;
-  }
+		return $response;
+	}
 
-  /**
-   * Retrieves the query params for collections of attachments.
-   *
-   * @since 1.0.0
-   * @access public
-   *
-   * @return array Query parameters for the attachment collection as an array.
-   */
-  public function get_ordering_collection_params() {
-    $params['status']['default'] = 'inherit';
-    $params['status']['items']['enum'] = array( 'inherit', 'private', 'trash' );
+	/**
+	 * Retrieves a collection of posts.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 *
+	 * @param WP_REST_Request $request Full details about the request.
+	 * @return WP_REST_Response|WP_Error Response object on success, or WP_Error object on failure.
+	 */
+	public function export($request)
+	{
 
-    $params['product_id'] = array(
-      'default'           => null,
-      'description'       => __( 'Product to be ordered' ),
-      'type'              => 'string'
-    );
+		$q = $request->get_query_params();
+		$type = $q['type'];
+		$filter = $q['filter'];
 
-    $params['prev_id'] = array(
-      'default'           => null,
-      'description'       => __( 'Product above new position' ),
-      'type'              => 'string'
-    );
+		// Ensure a search string is set in case the orderby is set to 'relevance'.
+		if (empty($type)) {
+			return new WP_Error('rest_missing_product_id', __('You need to define a product_id to be sorted.'), array('status' => 400));
+		}
 
-    $params['next_id'] = array(
-      'default'           => null,
-      'description'       => __( 'Product below new position' ),
-      'type'              => 'string'
-    );
+		return export_excel($type, $filter);
 
-    return $params;
-  }
+	}
+
+	/**
+	 * Retrieves the query params for collections of attachments.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 *
+	 * @return array Query parameters for the attachment collection as an array.
+	 */
+	public function get_ordering_collection_params()
+	{
+		$params['status']['default'] = 'inherit';
+		$params['status']['items']['enum'] = array('inherit', 'private', 'trash');
+
+		$params['product_id'] = array(
+			'default'           => null,
+			'description'       => __('Product to be ordered'),
+			'type'              => 'string'
+		);
+
+		$params['prev_id'] = array(
+			'default'           => null,
+			'description'       => __('Product above new position'),
+			'type'              => 'string'
+		);
+
+		$params['next_id'] = array(
+			'default'           => null,
+			'description'       => __('Product below new position'),
+			'type'              => 'string'
+		);
+
+		return $params;
+	}
+
+	/**
+	 * Retrieves the query params for collections of attachments.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 *
+	 * @return array Query parameters for the attachment collection as an array.
+	 */
+	public function get_export_params()
+	{
+
+		$params['type'] = array(
+			'default'           => null,
+			'description'       => __('Type of export: product, order or customer'),
+			'type'              => 'string'
+		);
+
+		$params['filter'] = array(
+			'default'           => null,
+			'description'       => __('Filter from search query'),
+			'type'              => 'string'
+		);
+
+		return $params;
+	}
 
 	/**
 	 * Ajax request handling for product ordering.

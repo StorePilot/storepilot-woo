@@ -5,6 +5,7 @@
  * @category Core
  * @author StorePilot
  */
+
 if (!defined('ABSPATH')) {
   exit; // Exit if accessed directly
 }
