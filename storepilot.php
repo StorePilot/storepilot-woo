@@ -11,7 +11,7 @@
  * Text Domain: storepilot
  * Domain Path: /languages
  *
- * Copyright: © 2018 StorePilot AS
+ * Copyright: © 2018 - 2020 StorePilot AS
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.html
  *
