@@ -1028,11 +1028,11 @@ msgstr "Save / fetch"
 
 #: includes/api/controllers/class-sp-rest-translation-controller.php:324
 msgid "Search by"
-msgstr "Quantity"
+msgstr "Search by"
 
 #: includes/api/controllers/class-sp-rest-translation-controller.php:323
 msgid "Search by SKU"
-msgstr "Search by Term"
+msgstr "Search by SKU"
 
 #: includes/api/controllers/class-sp-rest-translation-controller.php:322
 msgid "Search by Slug"

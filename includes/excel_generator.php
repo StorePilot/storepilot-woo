@@ -118,13 +118,13 @@ function export_excel($type, $filter) {
   $sheet->freezePane("A2");
 
   $writer = new Xlsx($spreadsheet);
-  $writer->save(__DIR__ . '/temp/products.xlsx');
+  $writer->save(__DIR__ . '/temp/storepilot_product_export.xlsx');
 
-  return wp_send_json(['url' => plugin_dir_url(__DIR__) . 'includes/temp/products.xlsx']);
+  return wp_send_json(['url' => plugin_dir_url(__DIR__) . 'includes/temp/storepilot_product_export.xlsx']);
 
 }
 
-// If files is older than one hour, cleanup
+// If temp files are older than one hour, cleanup
 $dir = __DIR__ . "/temp/";
 foreach (glob($dir . "*") as $file) {
   if (time() - filectime($file) > 3600) {
