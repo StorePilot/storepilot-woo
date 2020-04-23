@@ -2,13 +2,13 @@
 Contributors: Steffan Halvorsen, Tommy Vedvik
 Tags: storepilot, woocommerce, desktop, application, windows, mac, manager, shop, store, products, product, schedule, dynamic, dashboard, editor
 Requires at least: 4.4.0
-Tested up to: 5.3
+Tested up to: 5.4
 Requires PHP: 5.2 or higher
 Stable tag: 4.9.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl.html
 WC requires at least: 3.2
-WC tested up to: 3.6
+WC tested up to: 4.0
 
 StorePilot is a desktop application which makes WooCommerce easily accessible from your Desktop
 
@@ -63,6 +63,10 @@ we believe this will simplify your daily work.
 
 
 == Changelog ==
+
+= 1.2.6 =
+
+* Updated to support next release of StorePilot
 
 = 1.2.5 =
 

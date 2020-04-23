@@ -95,6 +95,7 @@ if (!class_exists('StorePilotCore')) :
       $settings = [
         'storepilot_invoice_company',
         'storepilot_invoice_email',
+        'storepilot_invoice_custom_text',
         'storepilot_logo',
         'storepilot_invoice_phone',
         'storepilot_invoice_address',
