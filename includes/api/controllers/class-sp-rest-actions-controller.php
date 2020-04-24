@@ -12,7 +12,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-include_once(__DIR__ . '/../../excel_generator.php');
+include_once(__DIR__ . '/../../excel_product_export.php');
+include_once(__DIR__ . '/../../excel_order_export.php');
+include_once(__DIR__ . '/../../excel_customer_export.php');
 
 /**
  * Action controller used for custom actions via the REST API.
@@ -135,8 +137,12 @@ class SP_REST_Actions_Controller {
 			return new WP_Error('rest_missing_product_id', __('You need to define a product_id to be sorted.'), array('status' => 400));
 		}
 
-		return export_excel($type, $filter);
-
+		if ($type === 'customers')
+			return excel_customer_export($filter);
+		else if ($type === 'orders')
+			return excel_order_export($filter);
+		else
+			return excel_product_export($filter);
 	}
 
 	/**
