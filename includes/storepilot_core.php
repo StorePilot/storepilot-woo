@@ -257,6 +257,7 @@ if (!class_exists('StorePilotCore')) :
       register_rest_field('product_cat', 'description_raw', array('get_callback' => array($this, 'get_category_description_raw')));
       /** Get unrendered content END **/
 
+      register_rest_field('system_status', 'prices_include_tax', array('get_callback' => array($this, 'get_prices_include_tax')));
       register_rest_field('product', 'price_range', array('get_callback' => 'get_price_range'));
       register_rest_field('product', 'images', array('get_callback' => array($this, 'get_images_src')));
       register_rest_field('product_variation', 'image', array('get_callback' => 'get_image_src'));
@@ -321,6 +322,11 @@ if (!class_exists('StorePilotCore')) :
         $updated[] = $image;
       }
       return $updated;
+    }
+
+    public function get_prices_include_tax()
+    {
+      return wc_prices_include_tax();
     }
 
     public function admin_warning() {
