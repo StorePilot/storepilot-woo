@@ -64,6 +64,10 @@ we believe this will simplify your daily work.
 
 == Changelog ==
 
+= 1.2.7 =
+
+* Added spreadsheet export & spreadsheet import functionality for next StorePilot release
+
 = 1.2.6 =
 
 * Updated to support next release of StorePilot
