@@ -3,8 +3,8 @@ Contributors: Steffan Halvorsen, Tommy Vedvik
 Tags: storepilot, woocommerce, desktop, application, windows, mac, manager, shop, store, products, product, schedule, dynamic, dashboard, editor
 Requires at least: 4.4.0
 Tested up to: 5.4
-Requires PHP: 5.2 or higher
-Stable tag: 4.9.4
+Requires PHP: 5.6 or higher
+Stable tag: trunk
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl.html
 WC requires at least: 3.2
