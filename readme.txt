@@ -54,9 +54,14 @@ It also have a Point of Sale section so you can do in person sales.
 * Full featured product manager
 * Customer manager
 * Order manager
+* Print order receipt
+* Print order invoice
+* Print order delivery notice
+* Print order picking list - **New!**
 * Media management with drag & drop upload
 * Fast lookup and search experience
 * Beautiful reports
+* Full mobile compatibility
 * Available for macOS, windows, iOS & Android
 
 = Which payment processors do you currently support for POS =
