@@ -10,56 +10,65 @@ License URI: https://www.gnu.org/licenses/gpl.html
 WC requires at least: 3.2
 WC tested up to: 4.0
 
-StorePilot is a desktop application which makes WooCommerce easily accessible from your Desktop
+StorePilot is a WooCommerce POS application for desktop & mobile with full store management integration
 
 
 == Description ==
 
-StorePilot is a desktop application which connects to WooCommerce stores for better management, runs on Windows & Mac
+StorePilot connects easily to WooCommerce stores and enables Point of Sale functionality, together with a bunch of other features.
 
-This plugin extends StorePilot with extra functionality, but IS NOT required to run StorePilot.
+Start using StorePilot by install the StorePilot desktop or mobile app available for macOS, windows, linux, iOS & android devices.
 
-Additional features will be available as:
+**This plugin will boost StorePilot with more features & improvements such as:**
 
+* Spreadsheet export of orders, customers & products - **New!**
+* Spreadsheet import of orders, customers & products - **New!**
 * Custom product sorting
 * Custom sale label for product sales
 * Faster file upload
-* Extends file upload to support any filetypes
 
 This plugin is completely free, no extra fees are added.
 
 Visit [our homepage](https://storepilot.com/) for more information.
 
-For issues & feature requests, please visit [our GitHub repo](https://github.com/StorePilot/storepilot-woo)
+For issues & feature requests, please see [our support page](http://storepilot.com/support)
 
 
 == FAQ ==
 
 = What is StorePilot? =
 
-StorePilot is a desktop application which makes it possible to manage your WooCommerce products, orders & customers
-without even opening a browser.
+StorePilot is a desktop & mobile application which makes it possible to manage your WooCommerce products, orders & customers without even opening a browser.
 
 = Why should I use StorePilot? =
 
-If you are working with products, customers & orders within WooCommerce at a daily basis,
-we believe this will simplify your daily work.
+If you are working with products, customers & orders within WooCommerce at a daily basis, StorePilot will simplify your daily work.
+
+It also have a Point of Sale section so you can do in person sales.
 
 = What features can I expect? =
 
+* Point of sale section with card reader support - **New!**
+* Spreadsheet export functionality - **New!**
+* Spreadsheet import functionality - **New!**
 * Full featured product manager
+* Customer manager
+* Order manager
 * Media management with drag & drop upload
 * Fast lookup and search experience
-* Customer management
-* Order management
 * Beautiful reports
+* Available for macOS, windows, iOS & Android
 
+= Which payment processors do you currently support for POS =
+
+* Sumup (Europe+)
+* Stripe (United States+)
 
 == Installation ==
 
 1. Install & Activate WooCommerce if not already done
-2. Download StorePilot desktop application from [our homepage](https://storepilot.com/)
-3. Install this plugin to get the additional features in your application
+2. Download StorePilot desktop or mobile app, more info at [our homepage](https://storepilot.com/)
+3. Install this plugin to get the additional features for your application
 
 
 == Changelog ==
