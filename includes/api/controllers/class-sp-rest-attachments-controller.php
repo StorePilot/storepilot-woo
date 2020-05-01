@@ -12,6 +12,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+include_once(__DIR__ . '/../../excel_product_import.php');
+include_once(__DIR__ . '/../../excel_order_import.php');
+include_once(__DIR__ . '/../../excel_customer_import.php');
 include_once( 'class-sp-rest-posts-controller.php' );
 
 /**
@@ -206,6 +209,39 @@ class SP_REST_Attachments_Controller extends SP_REST_Posts_Controller {
 		$url     = $file['url'];
 		$type    = $file['type'];
 		$file    = $file['file'];
+
+		if (
+			$type === 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' ||
+			$type === 'application/vnd.oasis.opendocument.spreadsheet' ||
+			$type === 'application/vnd.ms-excel' ||
+			$type === 'application/sylk' ||
+			$type === 'text/csv' ||
+			$type === 'text/xml'
+		) {
+
+			$post_type = isset($_GET['type']) ? $_GET['type'] : '';
+			$args = isset($_GET['arguments']) ? json_decode(stripslashes(html_entity_decode($_GET['arguments'])), true) : [];
+			if ($post_type === 'product') {
+				return excel_product_import([
+					'url' => $url,
+					'type' => $type,
+					'file' => $file
+				], $args);
+			} else if ($post_type === 'order') {
+				return excel_order_import([
+					'url' => $url,
+					'type' => $type,
+					'file' => $file
+				], $args);
+			} else if ($post_type === 'customer') {
+				return excel_customer_import([
+					'url' => $url,
+					'type' => $type,
+					'file' => $file
+				], $args);
+			}
+
+		}
 
 		// use image exif/iptc data for title and caption defaults if possible
 		$image_meta = @wp_read_image_metadata( $file );
