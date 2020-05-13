@@ -17,7 +17,7 @@ StorePilot is a WooCommerce POS application for desktop & mobile with full store
 
 StorePilot connects easily to WooCommerce stores and enables Point of Sale functionality, together with a bunch of other features.
 
-Start using StorePilot by install the StorePilot desktop or mobile app available for macOS, windows, linux, iOS & android devices.
+Start using StorePilot by installing the StorePilot desktop or mobile app available for macOS, windows, linux, iOS & android devices.
 
 **This plugin will boost StorePilot with more features & improvements such as:**
 
