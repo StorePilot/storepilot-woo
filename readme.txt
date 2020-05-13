@@ -78,6 +78,10 @@ It also have a Point of Sale section so you can do in person sales.
 
 == Changelog ==
 
+= 1.2.8 =
+
+* Updated translation for next StorePilot release
+
 = 1.2.7 =
 
 * Added spreadsheet export & spreadsheet import functionality for next StorePilot release
