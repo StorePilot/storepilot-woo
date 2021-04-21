@@ -104,6 +104,7 @@ if (!class_exists('StorePilotCore')) :
         'storepilot_invoice_city',
         'storepilot_invoice_country',
         'storepilot_invoice_bankaccount',
+        'storepilot_invoice_organization_number',
         'storepilot_invoice_logo',
         'storepilot_stripe_secret',
         'storepilot_barcode_meta',
@@ -114,7 +115,9 @@ if (!class_exists('StorePilotCore')) :
         'storepilot_vipps_merchant_id',
         'storepilot_vipps_client_id',
         'storepilot_vipps_client_secret',
-        'storepilot_vipps_subscription_key'
+        'storepilot_vipps_subscription_key',
+        'storepilot_nets_username',
+        'storepilot_nets_password'
       ];
       foreach($settings as $setting) {
         register_setting( 'general', $setting, array(
