@@ -85,6 +85,7 @@ if (!class_exists('StorePilotCore')) :
       register_activation_hook(__FILE__, array('SP_Install', 'install'));
       add_action('plugins_loaded', array($this, 'load_textdomain'));
       add_action('rest_api_init', array($this, 'add_additional_rest_fields'));
+      
       add_filter('woocommerce_loaded', array($this, 'extend_rest_api'));
       add_filter('woocommerce_sale_flash', array($this, 'sale_flash'));
       add_filter('woocommerce_rest_is_request_to_rest_api', '__return_true');
@@ -127,6 +128,11 @@ if (!class_exists('StorePilotCore')) :
       }
     }
 
+    public function register_shift_type()
+    {
+      include_once(plugin_dir_path(__FILE__) . 'shifts.php');
+    }
+
     public function extend_rest_api()
     {
       /**
@@ -143,10 +149,15 @@ if (!class_exists('StorePilotCore')) :
       require_once(__DIR__ . '/fields.php');
     }
 
+    public function register_custom_types() {
+      require_once(__DIR__ . '/shifts.php');
+    }
+    
     function load_textdomain() {
       $domain = 'storepilot';
       load_plugin_textdomain( $domain, false, dirname( plugin_basename( __FILE__ ) ) . '/../languages/' );
       $this->add_settings_pages();
+      $this->register_custom_types();
     }
 
     public function sale_flash($content)
