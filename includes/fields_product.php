@@ -59,6 +59,14 @@ function register_product_fields() {
       'type'        => 'string'
     )
   ));
+  register_rest_field('product', 'editable_price', array(
+    'get_callback'    => 'get_editable_price',
+    'update_callback' => 'update_editable_price',
+    'schema' => array(
+      'description' => __('Editable Price'),
+      'type'        => 'boolean'
+    )
+  ));
 }
 
 // Get
@@ -69,6 +77,13 @@ function get_barcode($obj)
 function get_rack($obj)
 {
   return get_post_meta($obj['id'], 'rack', true);
+}
+function get_editable_price($obj)
+{
+  if ( metadata_exists( 'post', $obj['id'], 'editable_price' ) ) {
+    return boolval(get_post_meta($obj['id'], 'editable_price', true));
+  }
+  return false;
 }
 
 // Update
@@ -93,6 +108,19 @@ function update_rack($value, $post, $key)
     return new WP_Error(
       'rest_product_rack_failed',
       __('Failed to update product rack.'),
+      array('status' => 500)
+    );
+  }
+  return true;
+}
+function update_editable_price($value, $post, $key)
+{
+  $obj = json_decode($post, true);
+  $post_id = update_post_meta($obj['id'], $key, $value);
+  if (false === $post_id) {
+    return new WP_Error(
+      'rest_product_editable_price_failed',
+      __('Failed to update product editable price.'),
       array('status' => 500)
     );
   }
