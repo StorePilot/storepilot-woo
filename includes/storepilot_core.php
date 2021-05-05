@@ -151,6 +151,7 @@ if (!class_exists('StorePilotCore')) :
 
     public function register_custom_types() {
       require_once(__DIR__ . '/shifts.php');
+      require_once(__DIR__ . '/history.php');
     }
     
     function load_textdomain() {
