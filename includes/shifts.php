@@ -72,7 +72,29 @@ add_action( 'rest_api_init', function() {
       'type'        => 'date'
     )
   ));
+  register_rest_field('shift', 'cash_incoming', array(
+    'get_callback'    => 'get_cash_incoming',
+    'update_callback' => 'update_shift',
+    'schema' => array(
+      'description' => __('Cash Incoming'),
+      'type'        => 'number'
+    )
+  ));
 });
+
+add_filter( 'rest_shift_query', function( $args, $request ) {
+	$current   = $request->get_param( 'current' );
+    if ( $current ) {
+        $args['meta_query'] = array(
+            array(
+                'key'     => 'end',
+                'compare' => 'NOT EXISTS'
+            )
+        );      
+	}
+    return $args;
+}, 10, 2 );
+
 
 // Get
 function get_start($obj)
@@ -83,7 +105,10 @@ function get_end($obj)
 {
   return get_post_meta($obj['id'], 'end', true);
 }
-
+function get_cash_incoming($obj)
+{
+  return get_post_meta($obj['id'], 'cash_incoming', true);
+}
 // Update
 function update_shift($value, $post, $key)
 {
