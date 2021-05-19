@@ -102,3 +102,17 @@ function update_operator($value, $post, $key)
   }
   return true;
 }
+
+add_filter('woocommerce_rest_orders_prepare_object_query', function($args, $request) {
+  $modified_after = $request->get_param('modified_after');
+
+  if (!$modified_after) {
+      return $args;
+  }
+
+  $args['date_query'][0]['column'] = 'post_modified';
+  $args['date_query'][0]['after']  = $modified_after;
+
+  return $args;
+
+}, 10, 2);
