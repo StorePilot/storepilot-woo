@@ -69,6 +69,16 @@ function register_product_fields() {
   ));
 }
 
+add_filter( 'woocommerce_rest_prepare_shop_order_object', 'line_items_editable_price', 10, 3 );
+function line_items_editable_price( $response, $post, $request ) {
+  $order_data = $response->get_data();
+  foreach ( $order_data['line_items'] as $key => $item ) {
+      $order_data['line_items'][ $key ]['editable_price'] = get_post_meta( $item['product_id'], 'editable_price', true );
+  }
+  $response->data = $order_data;
+  return $response;
+}
+
 // Get
 function get_barcode($obj)
 {
@@ -100,6 +110,7 @@ function update_barcode($value, $post, $key)
   }
   return true;
 }
+
 function update_rack($value, $post, $key)
 {
   $obj = json_decode($post, true);
@@ -113,6 +124,7 @@ function update_rack($value, $post, $key)
   }
   return true;
 }
+
 function update_editable_price($value, $post, $key)
 {
   $obj = json_decode($post, true);
