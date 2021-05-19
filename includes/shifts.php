@@ -56,27 +56,59 @@ add_action( 'init', function() {
 
 // Add to REST API
 add_action( 'rest_api_init', function() {
-  register_rest_field('shift', 'start', array(
-    'get_callback'    => 'get_start',
+	register_rest_field('shift', 'register', array(
+		'get_callback'    => get_shift_meta('register'),
+		'update_callback' => 'update_shift',
+		'schema' => array(
+				'description' => __('Register'),
+				'type'        => 'string'
+		)
+	));
+	register_rest_field('shift', 'start', array(
+		'get_callback'    => get_shift_meta('start'),
+		'update_callback' => 'update_shift',
+		'schema' => array(
+			'description' => __('Start'),
+			'type'        => 'date'
+		)
+	));
+	register_rest_field('shift', 'end', array(
+		'get_callback'    => get_shift_meta('end'),
+		'update_callback' => 'update_shift',
+		'schema' => array(
+			'description' => __('End'),
+			'type'        => 'date'
+		)
+	));
+	register_rest_field('shift', 'opening_balance', array(
+		'get_callback'    => get_shift_meta('opening_balance'),
+		'update_callback' => 'update_shift',
+		'schema' => array(
+			'description' => __('Cash Incoming'),
+			'type'        => 'number'
+		)
+	));
+  register_rest_field('shift', 'closing_to_safe', array(
+    'get_callback'    => get_shift_meta('closing_to_safe'),
     'update_callback' => 'update_shift',
     'schema' => array(
-      'description' => __('Start'),
-      'type'        => 'date'
+      'description' => __('Cash To Safe'),
+      'type'        => 'number'
     )
   ));
-  register_rest_field('shift', 'end', array(
-    'get_callback'    => 'get_end',
+  register_rest_field('shift', 'closing_to_store', array(
+    'get_callback'    => get_shift_meta('closing_to_store'),
     'update_callback' => 'update_shift',
     'schema' => array(
-      'description' => __('End'),
-      'type'        => 'date'
+      'description' => __('Cash To Store'),
+      'type'        => 'number'
     )
   ));
-  register_rest_field('shift', 'cash_incoming', array(
-    'get_callback'    => 'get_cash_incoming',
+  register_rest_field('shift', 'closing_count', array(
+    'get_callback'    => get_shift_meta('closing_count'),
     'update_callback' => 'update_shift',
     'schema' => array(
-      'description' => __('Cash Incoming'),
+      'description' => __('Closing count'),
       'type'        => 'number'
     )
   ));
@@ -84,32 +116,34 @@ add_action( 'rest_api_init', function() {
 
 add_filter( 'rest_shift_query', function( $args, $request ) {
 	$current   = $request->get_param( 'current' );
+	$register  = $request->get_param( 'register' );
+	$args['meta_query'] = array();
     if ( $current ) {
-        $args['meta_query'] = array(
+        array_push($args['meta_query'],
             array(
                 'key'     => 'end',
                 'compare' => 'NOT EXISTS'
             )
         );      
 	}
+	if ( $register ) {
+		array_push($args['meta_query'],
+            array(
+                'key'     => 'register',
+				'compare' => '=',
+				'value' => $register
+            )
+        );
+	}
     return $args;
 }, 10, 2 );
 
+function get_shift_meta($meta) {
+	return function ($obj) use ($meta) {
+		return get_post_meta($obj['id'], $meta, true);
+	};
+}
 
-// Get
-function get_start($obj)
-{
-  return get_post_meta($obj['id'], 'start', true);
-}
-function get_end($obj)
-{
-  return get_post_meta($obj['id'], 'end', true);
-}
-function get_cash_incoming($obj)
-{
-  return get_post_meta($obj['id'], 'cash_incoming', true);
-}
-// Update
 function update_shift($value, $post, $key)
 {
   $post_id = update_post_meta($post->ID, $key, $value);

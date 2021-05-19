@@ -57,11 +57,27 @@ add_action( 'init', function() {
 // Add to REST API
 add_action( 'rest_api_init', function() {
   register_rest_field('history', 'shift', array(
-    'get_callback'    => 'get_shift',
+    'get_callback'    => get_history_meta('shift'),
     'update_callback' => 'update_history',
     'schema' => array(
       'description' => __('Shift'),
 	  'type'        => 'integer',
+	)
+  ));
+  register_rest_field('history', 'action', array(
+    'get_callback'    => get_history_meta('action'),
+    'update_callback' => 'update_history',
+    'schema' => array(
+      'description' => __('Action'),
+	  'type'        => 'string',
+	)
+  ));
+  register_rest_field('history', 'details', array(
+    'get_callback'    => get_history_meta('details'),
+    'update_callback' => 'update_history',
+    'schema' => array(
+      'description' => __('Details'),
+	  'type'        => 'object',
 	)
   ));
 });
@@ -80,10 +96,10 @@ add_filter( 'rest_history_query', function( $args, $request ) {
     return $args;
 }, 10, 2 );
 
-// Get
-function get_shift($obj)
-{
-  return get_post_meta($obj['id'], 'shift', true);
+function get_history_meta($meta) {
+	return function ($obj) use ($meta) {
+		return get_post_meta($obj['id'], $meta, true);
+	};
 }
 
 // Update
