@@ -2,13 +2,13 @@
 Contributors: Steffan Halvorsen, Tommy Vedvik
 Tags: storepilot, woocommerce, desktop, application, windows, mac, manager, shop, store, products, product, schedule, dynamic, dashboard, editor
 Requires at least: 4.4.0
-Tested up to: 5.4
+Tested up to: 5.7
 Requires PHP: 5.6 or higher
 Stable tag: trunk
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl.html
 WC requires at least: 3.2
-WC tested up to: 4.0
+WC tested up to: 5.3
 
 StorePilot is a WooCommerce POS application for desktop & mobile with full store management integration
 
@@ -21,8 +21,8 @@ Start using StorePilot by installing the StorePilot desktop or mobile app availa
 
 **This plugin will boost StorePilot with more features & improvements such as:**
 
-* Spreadsheet export of orders, customers & products - **New!**
-* Spreadsheet import of orders, customers & products - **New!**
+* Spreadsheet export of orders, customers & products
+* Spreadsheet import of orders, customers & products
 * Custom product sorting
 * Custom sale label for product sales
 * Faster file upload
@@ -48,16 +48,16 @@ It also have a Point of Sale section so you can do in person sales.
 
 = What features can I expect? =
 
-* Point of sale section with card reader support - **New!**
-* Spreadsheet export functionality - **New!**
-* Spreadsheet import functionality - **New!**
+* Point of sale section with card reader support
+* Spreadsheet export functionality
+* Spreadsheet import functionality
 * Full featured product manager
 * Customer manager
 * Order manager
 * Print order receipt
 * Print order invoice
 * Print order delivery notice
-* Print order picking list - **New!**
+* Print order picking list
 * Media management with drag & drop upload
 * Fast lookup and search experience
 * Beautiful reports
@@ -77,6 +77,10 @@ It also have a Point of Sale section so you can do in person sales.
 
 
 == Changelog ==
+
+= 1.2.9 =
+
+* Ensure that StorePilot works with the latest WooCommerce & WordPress updates
 
 = 1.2.8 =
 
